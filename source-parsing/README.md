@@ -25,9 +25,9 @@ Test Plan
 	- All testing built into program execution.
 		>                                                 <strong>Hutchison starts opener; roster takes shape</strong>
 		>
-		> \<li>\<h4/>\<a href="/related/tag?Tag=Drew Hutchison">Drew Hutchison</a></h4></li>
-		>                                        <img title='Drew Hutchison, The Canadian Press' height='135' alt='Drew Hutchison' width='240' align='' src='/polopoly_fs/1.233715.1426645946!/fileimage/httpImage/image.jpg_gen/derivatives/landscape_240/drew-hutchison.jpg' />
-		>    ><h3>Hutchison starts opener; roster takes shape</h3></a>
+		> \<li>\<h4>\<a href="/related/tag?Tag=Drew Hutchison">Drew Hutchison\</a>\</h4>\</li>
+		>                                        \<img title='Drew Hutchison, The Canadian Press' height='135' alt='Drew Hutchison' width='240' align='' src='/polopoly_fs/1.233715.1426645946!/fileimage/httpImage/image.jpg_gen/derivatives/landscape_240/drew-hutchison.jpg' />
+		>    >\<h3>Hutchison starts opener; roster takes shape\</h3>\</a>
 		>
 		>                    <p>Drew Hutchison has been named the Toronto Blue Jays Opening Day starter for 2015. It was announced Tuesday that the 24-year-old right-hander will be on the hill when the team opens its season at Yankee Stadium on Monday.</p>
 
