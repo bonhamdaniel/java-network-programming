@@ -70,15 +70,15 @@ Test Plan
 	- Runs program as constituted, without any alterations.
 	- Should display output as required in program specification.
 	- All testing built into program execution.
-		><!-- crazyegg code -->
-		><!-- crazyegg code -->
+		- >/<!-- crazyegg code --/>
+		- >/<!-- crazyegg code --/>
 
 **All output as expected
 
 - Error Case 1 (invalid URL: java SourceViewer h//orly.com "search"):
-		- >h//orly.com is not a parseable URL
+	- >h//orly.com is not a parseable URL
 - Error Case 2 (both arguments not provided at command line):
-		- >Usage is: java SourceViewer <URL> <search string>
+	- >Usage is: java SourceViewer <URL> <search string>
 
 ***As this program is completely hardcoded, there is no user input at all, there are no
 further cases to test.  The above demonstrates that the program works as required.
