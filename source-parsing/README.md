@@ -20,10 +20,10 @@ SourceViewer.java - source viewer that incorporates a search function. When prov
 
 Test Plan
 - Normal Case 1 (java SourceViewer http://tsn.ca "Hutchison"):
-		Runs program as constituted, without any alterations.
-		Should display output as required in program specification.
-		All testing built into program execution.
-		>                                                 <strong>Hutchison starts opener;
+	- Runs program as constituted, without any alterations.
+	- Should display output as required in program specification.
+	- All testing built into program execution.
+		>                                                 /<strong/>Hutchison starts opener;
 		> roster takes shape</strong>
 		>
 		><li><h4><a href="/related/tag?Tag=Drew Hutchison
