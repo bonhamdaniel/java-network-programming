@@ -23,21 +23,13 @@ Test Plan
 	- Runs program as constituted, without any alterations.
 	- Should display output as required in program specification.
 	- All testing built into program execution.
-		>                                                 <strong>Hutchison starts opener;
-		> roster takes shape</strong>
+		>                                                 <strong>Hutchison starts opener; roster takes shape</strong>
 		>
-		><li><h4><a href="/related/tag?Tag=Drew Hutchison
-		>">Drew Hutchison</a></h4></li>
-		>                                        <img title='Drew Hutchison, The Canadian
-		> Press' height='135' alt='Drew Hutchison' width='240' align='' src='/polopoly_fs
-		>/1.233715.1426645946!/fileimage/httpImage/image.jpg_gen/derivatives/landscape_24
-		>0/drew-hutchison.jpg' />
+		>/<li><h4><a href="/related/tag?Tag=Drew Hutchison">Drew Hutchison</a></h4></li>
+		>                                        <img title='Drew Hutchison, The Canadian Press' height='135' alt='Drew Hutchison' width='240' align='' src='/polopoly_fs/1.233715.1426645946!/fileimage/httpImage/image.jpg_gen/derivatives/landscape_240/drew-hutchison.jpg' />
 		>    ><h3>Hutchison starts opener; roster takes shape</h3></a>
 		>
-		>                    <p>Drew Hutchison has been named the Toronto Blue Jays Openi
-		>ng Day starter for 2015. It was announced Tuesday that the 24-year-old right-han
-		>der will be on the hill when the team opens its season at Yankee Stadium on Mond
-		>ay.</p>
+		>                    <p>Drew Hutchison has been named the Toronto Blue Jays Opening Day starter for 2015. It was announced Tuesday that the 24-year-old right-hander will be on the hill when the team opens its season at Yankee Stadium on Monday.</p>
 
 **All output as expected
 
