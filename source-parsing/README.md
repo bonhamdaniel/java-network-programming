@@ -50,13 +50,13 @@ Test Plan
 		- >\<form name="searchform" method="get" id="search-form" action="http://search.orei
 		- >lly.com/"\>\<div class="search"\>
 		- >        <span id="search-input">
-		- >            \<div class="searchInput"\>
-		- >            \<span id="search-field"\>\<input type="text" value="Search" name="q" m
+		- >            <div class="searchInput">
+		- >            <span id="search-field"><input type="text" value="Search" name="q" m
 		- >axlength="200" id="q" onfocus="this.value=checkIfDefault(this.value);"\>\</span\>
-		- >            \<span id="search-button"\>\<input type="image" value="SEARCH" src="htt
+		- >            <span id="search-button"><input type="image" value="SEARCH" src="htt
 		- >p://cdn.oreillystatic.com/images/oreilly/large-search.png" border="0" style="flo
 		- >at:left" alt="Search" align="top"\>\</span\>
-		- >                \<p\>O'Reilly spreads the knowledge of innovators through its tech
+		- >                <p>O'Reilly spreads the knowledge of innovators through its tech
 		- >nology books, online services, magazines, research, and tech conferences. Since
 		- >1978, O'Reilly has been a chronicler and catalyst of leading-edge development, h
 		- >oming in on the technology trends that really matter and galvanizing their adopt
