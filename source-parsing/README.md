@@ -47,14 +47,11 @@ Test Plan
 	- All testing built into program execution.
 		- >\<tr\>\<td id="search2" class="v2"\>
 		- >\<div id="search-box" class="yui-skin-sam"\>
-		- >\<form name="searchform" method="get" id="search-form" action="http://search.oreilly.com/"\>\<div class="search"\>
+		- >\<form name="searchform" method="get" id="search-form" action="http://search.oreilly.com/"><div class="search"\>
 		- >        <span id="search-input">
 		- >            <div class="searchInput">
-		- >            <span id="search-field"><input type="text" value="Search" name="q" m
-		- >axlength="200" id="q" onfocus="this.value=checkIfDefault(this.value);"\>\</span\>
-		- >            <span id="search-button"><input type="image" value="SEARCH" src="htt
-		- >p://cdn.oreillystatic.com/images/oreilly/large-search.png" border="0" style="flo
-		- >at:left" alt="Search" align="top"\>\</span\>
+		- >            <span id="search-field"><input type="text" value="Search" name="q" maxlength="200" id="q" onfocus="this.value=checkIfDefault(this.value);"\>\</span\>
+		- >            <span id="search-button"><input type="image" value="SEARCH" src="http://cdn.oreillystatic.com/images/oreilly/large-search.png" border="0" style="float:left" alt="Search" align="top"\>\</span\>
 		- >                <p>O'Reilly spreads the knowledge of innovators through its tech
 		- >nology books, online services, magazines, research, and tech conferences. Since
 		- >1978, O'Reilly has been a chronicler and catalyst of leading-edge development, h
