@@ -81,11 +81,11 @@ Test Plan
 **All output as expected
 
 - Normal Case 2:
-		Runs program as constituted, without any alterations.
-		Should display output as required in program specification.
-		Server command prompt: java FileHTTPServer "Directory" 80
-		Client command prompt: telnet localhost 80
-							   GET crosby.html HTTP/1.0
+	- Runs program as constituted, without any alterations.
+	- Should display output as required in program specification.
+	- Server command prompt: java FileHTTPServer "Directory" 80
+	- Client command prompt: telnet localhost 80
+	- Client command prompt: GET crosby.html HTTP/1.0
 		> HTTP/1.0 200 OK
 		> Date: Thu Apr 02 16:52:04 EDT 2015
 		> Server: FileHTTPServer
