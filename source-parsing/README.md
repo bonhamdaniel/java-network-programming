@@ -26,8 +26,8 @@ Test Plan
 		>                                                 <strong>Hutchison starts opener; roster takes shape</strong>
 		>
 		> \<li>\<h4>\<a href="/related/tag?Tag=Drew Hutchison">Drew Hutchison\</a>\</h4>\</li>
-		>                                        \<img title='Drew Hutchison, The Canadian Press' height='135' alt='Drew Hutchison' width='240' align='' src='/polopoly_fs/1.233715.1426645946!/fileimage/httpImage/image.jpg_gen/derivatives/landscape_240/drew-hutchison.jpg' />
-		>    >\<h3>Hutchison starts opener; roster takes shape\</h3>\</a>
+		>                                        \<img title='Drew Hutchison, The Canadian Press' height='135' alt='DrewHutchison' width='240' align='' src='/polopoly_fs/1.233715.1426645946!/fileimage/httpImage/image.jpg_gen/derivatives/landscape_240/drew-hutchison.jpg' />
+		>    \<h3>Hutchison starts opener; roster takes shape\</h3>\</a>
 		>
 		>                    <p>Drew Hutchison has been named the Toronto Blue Jays Opening Day starter for 2015. It was announced Tuesday that the 24-year-old right-hander will be on the hill when the team opens its season at Yankee Stadium on Monday.</p>
 
@@ -44,13 +44,7 @@ Test Plan
 		- >            <div class="searchInput">
 		- >            <span id="search-field"><input type="text" value="Search" name="q" maxlength="200" id="q" onfocus="this.value=checkIfDefault(this.value);"\>\</span\>
 		- >            <span id="search-button"><input type="image" value="SEARCH" src="http://cdn.oreillystatic.com/images/oreilly/large-search.png" border="0" style="float:left" alt="Search" align="top"\>\</span\>
-		- >                <p>O'Reilly spreads the knowledge of innovators through its tech
-		- >nology books, online services, magazines, research, and tech conferences. Since
-		- >1978, O'Reilly has been a chronicler and catalyst of leading-edge development, h
-		- >oming in on the technology trends that really matter and galvanizing their adopt
-		- >ion by amplifying "faint signals" from the alpha geeks who are creating the futu
-		- >re. An active participant in the technology community, O'Reilly has a long histo
-		- >ry of advocacy, meme-making, and evangelism.\</p\>
+		- >                <p>O'Reilly spreads the knowledge of innovators through its technology books, online services, magazines, research, and tech conferences. Since 1978, O'Reilly has been a chronicler and catalyst of leading-edge development, homing in on the technology trends that really matter and galvanizing their adoption by amplifying "faint signals" from the alpha geeks who are creating the future. An active participant in the technology community, O'Reilly has a long history of advocacy, meme-making, and evangelism.\</p\>
 
 **All output as expected
 
