@@ -47,8 +47,7 @@ Test Plan
 	- All testing built into program execution.
 		- >\<tr\>\<td id="search2" class="v2"\>
 		- >\<div id="search-box" class="yui-skin-sam"\>
-		- >\<form name="searchform" method="get" id="search-form" action="http://search.orei
-		- >lly.com/"\>\<div class="search"\>
+		- >\<form name="searchform" method="get" id="search-form" action="http://search.oreilly.com/"\>\<div class="search"\>
 		- >        <span id="search-input">
 		- >            <div class="searchInput">
 		- >            <span id="search-field"><input type="text" value="Search" name="q" m
