@@ -45,40 +45,42 @@ FileHTTPServer.java - an HTTP server able to display HTML web pages as well as e
 
 Test Plan
 - Normal Case 1:
-		Runs program as constituted, without any alterations.
-		Should display output as required in program specification.
-		Server command prompt: java FileHTTPServer "Directory" 80
-		Client command prompt: telnet localhost 80
-							   GET McDavid.html HTTP/1.0
-		> HTTP/1.0 200 OK
-		> Date: Thu Apr 02 16:38:24 EDT 2015
-		> Server: FileHTTPServer
-		> Content-length: 65186
-		> Content-type: text/html
-		> 
-		> 
-		> <!-- saved from url=(0067)http://www.hockeydb.com/ihdb/stats/pdisplay.php?filter
-		> =Y&pid=160293 -->
- 		>                 <html><head><meta http-equiv="Content-Type" content="text/html;
-		>  charset=windows-1252"></head><body><div class="line-gutter-backdrop"></div><tab
-		> le><tbody><tr><td class="line-number" value="1"></td><td class="line-content"><s
-		> pan class="html-doctype">&lt;!DOCTYPE html&gt;</span> </td></tr><tr><td class="l
-		> ine-number" value="2"></td><td class="line-content"><span class="html-tag">&lt;h
-		> tml <span class="html-attribute-name">xmlns</span>="<span class="html-attribute-
-		> value">http://www.w3.org/1999/xhtml</span>" <span class="html-attribute-name">xm
-		> l:lang</span>="<span class="html-attribute-value">en</span>" <span class="html-a
-		> ttribute-name">lang</span>="<span class="html-attribute-value">en</span>"&gt;</s
-		> pan></td></tr><tr><td class="line-number" value="3"></td><td class="line-content
-		> "><span class="html-tag">&lt;head&gt;</span></td></tr><tr><td class="line-number
-		> " value="4"></td><td class="line-content"><span class="html-tag">&lt;title&gt;</
-		> span>Connor McDavid hockey statistics and profile at hockeydb.com<span class="ht
-		> ml-tag">&lt;/title&gt;</span></td></tr><tr><td class="line-number" value="5"></t
-		> d><td class="line-content"><span class="html-tag">&lt;meta <span class="html-att
-		.
-		.
-		.
-		**All output as expected
-Normal Case 2:
+	- Runs program as constituted, without any alterations.
+	- Should display output as required in program specification.
+	- Server command prompt: java FileHTTPServer "Directory" 80
+	- Client command prompt: telnet localhost 80
+	- Client command prompt: GET McDavid.html HTTP/1.0
+		- > HTTP/1.0 200 OK
+		- > Date: Thu Apr 02 16:38:24 EDT 2015
+		- > Server: FileHTTPServer
+		- > Content-length: 65186
+		- > Content-type: text/html
+		- > 
+		- > 
+		- > <!-- saved from url=(0067)http://www.hockeydb.com/ihdb/stats/pdisplay.php?filter
+		- > =Y&pid=160293 -->
+ 		- >                 <html><head><meta http-equiv="Content-Type" content="text/html;
+		- >  charset=windows-1252"></head><body><div class="line-gutter-backdrop"></div><tab
+		- > le><tbody><tr><td class="line-number" value="1"></td><td class="line-content"><s
+		- > pan class="html-doctype">&lt;!DOCTYPE html&gt;</span> </td></tr><tr><td class="l
+		- > ine-number" value="2"></td><td class="line-content"><span class="html-tag">&lt;h
+		- > tml <span class="html-attribute-name">xmlns</span>="<span class="html-attribute-
+		- > value">http://www.w3.org/1999/xhtml</span>" <span class="html-attribute-name">xm
+		- > l:lang</span>="<span class="html-attribute-value">en</span>" <span class="html-a
+		- > ttribute-name">lang</span>="<span class="html-attribute-value">en</span>"&gt;</s
+		- > pan></td></tr><tr><td class="line-number" value="3"></td><td class="line-content
+		- > "><span class="html-tag">&lt;head&gt;</span></td></tr><tr><td class="line-number
+		- > " value="4"></td><td class="line-content"><span class="html-tag">&lt;title&gt;</
+		- > span>Connor McDavid hockey statistics and profile at hockeydb.com<span class="ht
+		- > ml-tag">&lt;/title&gt;</span></td></tr><tr><td class="line-number" value="5"></t
+		- > d><td class="line-content"><span class="html-tag">&lt;meta <span class="html-att
+		- .
+		- .
+		- .
+
+**All output as expected
+
+- Normal Case 2:
 		Runs program as constituted, without any alterations.
 		Should display output as required in program specification.
 		Server command prompt: java FileHTTPServer "Directory" 80
