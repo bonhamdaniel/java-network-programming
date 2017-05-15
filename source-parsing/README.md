@@ -49,7 +49,7 @@ Test Plan
 		- >\<div id="search-box" class="yui-skin-sam"\>
 		- >\<form name="searchform" method="get" id="search-form" action="http://search.orei
 		- >lly.com/"\>\<div class="search"\>
-		- >        \<span id="search-input"\>
+		- >        <span id="search-input">
 		- >            \<div class="searchInput"\>
 		- >            \<span id="search-field"\>\<input type="text" value="Search" name="q" m
 		- >axlength="200" id="q" onfocus="this.value=checkIfDefault(this.value);"\>\</span\>
