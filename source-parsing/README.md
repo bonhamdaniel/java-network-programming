@@ -23,7 +23,7 @@ Test Plan
 	- Runs program as constituted, without any alterations.
 	- Should display output as required in program specification.
 	- All testing built into program execution.
-		>                                                 /<strong/>Hutchison starts opener;
+		>                                                 <strong>Hutchison starts opener;
 		> roster takes shape</strong>
 		>
 		><li><h4><a href="/related/tag?Tag=Drew Hutchison
@@ -38,11 +38,13 @@ Test Plan
 		>ng Day starter for 2015. It was announced Tuesday that the 24-year-old right-han
 		>der will be on the hill when the team opens its season at Yankee Stadium on Mond
 		>ay.</p>
-		**All output as expected
-Normal Case 2 (java SourceViewer http://oreilly.com "search"):
-		Runs program as constituted, without any alterations.
-		Should display output as required in program specification.
-		All testing built into program execution.
+
+**All output as expected
+
+- Normal Case 2 (java SourceViewer http://oreilly.com "search"):
+	- Runs program as constituted, without any alterations.
+	- Should display output as required in program specification.
+	- All testing built into program execution.
 		><tr><td id="search2" class="v2">
 		><div id="search-box" class="yui-skin-sam">
 		><form name="searchform" method="get" id="search-form" action="http://search.orei
@@ -61,20 +63,26 @@ Normal Case 2 (java SourceViewer http://oreilly.com "search"):
 		>ion by amplifying "faint signals" from the alpha geeks who are creating the futu
 		>re. An active participant in the technology community, O'Reilly has a long histo
 		>ry of advocacy, meme-making, and evangelism.</p>
-		**All output as expected
-Normal Case 3 (java SourceViewer http://oreilly.com "!-- crazyegg"):
-		Runs program as constituted, without any alterations.
-		Should display output as required in program specification.
-		All testing built into program execution.
+
+**All output as expected
+
+- Normal Case 3 (java SourceViewer http://oreilly.com "!-- crazyegg"):
+	- Runs program as constituted, without any alterations.
+	- Should display output as required in program specification.
+	- All testing built into program execution.
 		><!-- crazyegg code -->
 		><!-- crazyegg code -->
-		**All output as expected
-Error Case 1 (invalid URL: java SourceViewer h//orly.com "search"):
-		>h//orly.com is not a parseable URL
-Error Case 2 (both arguments not provided at command line):
-		>Usage is: java SourceViewer <URL> <search string>
+
+**All output as expected
+
+- Error Case 1 (invalid URL: java SourceViewer h//orly.com "search"):
+		- >h//orly.com is not a parseable URL
+- Error Case 2 (both arguments not provided at command line):
+		- >Usage is: java SourceViewer <URL> <search string>
+
 ***As this program is completely hardcoded, there is no user input at all, there are no
 further cases to test.  The above demonstrates that the program works as required.
+
 Discussion:
 		The first three test cases demonstrate that the search option that is specified 
 		in the requirements is working correctly.  These cases use the different sites
@@ -82,5 +90,5 @@ Discussion:
 		manual inspection performed outside the program on URL sources.  All manual
 		inspections matched up with the program results.
 		The fourth test case tests the program when provided with an invalid URL, while
-		the fifth shows the result if both arguments are not provided atthe command line.
+		the fifth shows the result if both arguments are not provided at the command line.
 		These were included as very minimal error handling tests.
