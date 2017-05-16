@@ -1,6 +1,3 @@
-// COMP348 Project: GetMail.java
-// Code adapted from FetchingEmail.java found in the tutorial at 
-// http://www.tutorialspoint.com/javamail_api/
 // references used:
 // http://alvinalexander.com/java/javamail-search-unseen-unread-messages-mailbox-pop3
 // http://www.compiletimeerror.com/2013/06/reading-email-using-javamail-api-example.html#.VTaa-lXBzGc
@@ -14,7 +11,7 @@ Description: Simple email program that queries an email server, using appropriat
              the sender (in parentheses). This is done by executing the program without 
              any argument except user credentials:
 
-             ‘java GetMail server user password’.
+             â€˜java GetMail server user passwordâ€™.
 
              A second invocation of the program, with the addition of the number of the 
              email as provided in the list of returned pending emails, retrieves that 
