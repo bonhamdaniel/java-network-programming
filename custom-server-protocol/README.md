@@ -115,7 +115,7 @@ Test Plan
 
 **All output as expected
 
--Normal Case 2:
+- Normal Case 2:
 	- Runs program as constituted, without any alterations.
 	- Should display output as required in program specification and perform logging.
 	- (Server still running)
