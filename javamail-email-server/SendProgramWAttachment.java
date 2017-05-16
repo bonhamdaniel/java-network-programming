@@ -1,6 +1,3 @@
-// Code adapted from SendAttachmentInEmail.java found in the tutorial at 
-// http://www.tutorialspoint.com/javamail_api/
-
 /*
 Title: SendProgramWAttachment.java
 Description: Simple email program that connects to the smtp.gmail.com server and sends 
