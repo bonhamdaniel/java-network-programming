@@ -28,21 +28,55 @@ Retrieval Application (GetMail.java)
 - Execution: java GetMail [server] [user] [password] or java GetMail [server] [user] [password] [email#]
 - Notes:  The program must access a valid email account.
 - Classes: 
-      - GetMail - includes all required functionality. Only has the main method and the 
+  - GetMail - includes all required functionality. Only has the main method and the 
           method receiveMail.
 - Variables:
   - properties - Properties - used to store the email server properties
-      - emailSession - Session - used to store the Session used for the email Session
-      - emailStore - Store - used to store the imaps Store used for receiving emails
-      - emailFolder - Folder - used to store the Folder to access for receiving emails
-      - unread - int - used to store the number of unread messages found
-      - messages - Message[] - used to store all the unread messages found
-      - message - Message - used to store the current message
-      - mp - Multipart - used to store Multipart messages
-      - bp - BodyPart - used to store the body of the message
-      - host - String - used to store the server host used for receiving emails
-      - mailStoreType - Store - used to store the type of Store used to receive emails
-      - username - String - used to store the username of the account to access
-      - password - String - used to store the password of the account to access
-      - option - int - used to store the email # theuse would like to access.
+  - emailSession - Session - used to store the Session used for the email Session
+  - emailStore - Store - used to store the imaps Store used for receiving emails
+  - emailFolder - Folder - used to store the Folder to access for receiving emails
+  - unread - int - used to store the number of unread messages found
+  - messages - Message[] - used to store all the unread messages found
+  - message - Message - used to store the current message
+  - mp - Multipart - used to store Multipart messages
+  - bp - BodyPart - used to store the body of the message
+  - host - String - used to store the server host used for receiving emails
+  - mailStoreType - Store - used to store the type of Store used to receive emails
+  - username - String - used to store the username of the account to access
+  - password - String - used to store the password of the account to access
+  - option - int - used to store the email # theuse would like to access.
 
+
+Send Mail Application
+- Program Purpose:
+      Introduces the Java Networking concepts of sending emails associated with the 
+      JavaMail API.
+Compile: javac SendProgram1.java
+         (Must first include javax.mail.jar in the CLASSPATH)
+Execution: java SendProgram1 thisfile.txt
+Notes:  The program use my personal gmail account for sending.
+Classes: 
+      SendProgram1 - includes all required functionality. Only has the main method.
+Variables:
+      emailFile - File - used to store the file provided at the command line, which 
+            contains the contents of the email to be sent.
+      inFile - BufferedReader - used to store buffered reader attached to the email file
+      host - String - used to store the email server used, retrieved from the email file
+      from - String - used to store the account to send the email from, retrieved from 
+            the email file
+      username - String - used to store the username of the sender account, retrieved from
+            the email file
+      password - String - used to store the password of the sender account, retrieved from
+            the email file
+      to - String - used to store the primary recipient of the email, retrieved from the 
+            email file
+      ccLine - String - used to store a line of comma separated cc addresses for the email, 
+            retrieved from the email file
+      bccLine - String - used to store a line of comma separated bcc addresses for the email,
+            retrieved from the email file
+      subject - String - used to store the subject of the email, retrieved from the email file
+      body - String - used to store the body of the email, retrieved from the email file
+      line - String - used to store each line as it is read in from the email file
+      props - Properties - used to store the server properties used to send the email
+      session - Session - used to store the Session instance used to send the email
+      message - Message - used to store the various components of the email message
