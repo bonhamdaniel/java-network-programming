@@ -4,7 +4,7 @@ PodServer.java - server that interacts with clients via telnet and includes the 
 		Introduces the Java Networking concepts of the ServerSocket and network application
 		protocols.
 - Compile: javac PodServer.java
-- Execution: java PodServer <file of poems> <port> 
+- Execution: java PodServer [file of poems] [port] 
 - Notes:  A telnet client is used to test the server.  When a client connects, the server
 		displays the poems to the client and accepts choice.  This is further documented in
 		the test plan.  Each request is logged to a file called "requests" created in the
