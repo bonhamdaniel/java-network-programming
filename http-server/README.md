@@ -4,7 +4,7 @@ FileHTTPServer.java - an HTTP server able to display HTML web pages as well as e
 		Introduces the Java Networking concepts of server I/O, 
 		Sockets, ServerSockets, etc.
 - Compile: javac FileHTTPServer.java
-- Execution: java FileHTTPServer <root directory> <port> 
+- Execution: java FileHTTPServer [root directory] [port] 
 - Notes:  A telnet client is used to test the server.  GET commands are sent from telnet for
 		specified files to be searched for on the server.  This is further documented in
 		the test plan.
