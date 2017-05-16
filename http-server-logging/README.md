@@ -55,221 +55,179 @@ HTTPServerWLog.java - beginning with the FileHTTPServer, adds full logging capab
 
 Test Plan
 - Normal Case 1:
-		Runs program as constituted, without any alterations.
-		Should display output as required in program specification and perform logging.
-		Server command prompt: java HTTPServerWLog "Directory" 80
-		> Apr 16, 2015 10:28:50 AM HTTPServerWLog start
-		> INFO: Accepting connections on port 80
-		> Apr 16, 2015 10:28:50 AM HTTPServerWLog start
-		> INFO: Document Root: Directory
-		Client command prompt: telnet localhost 80
-							   GET McDavid.html HTTP/1.0
-		> HTTP/1.0 200 OK
-		> Date: Thu Apr 16 10:30:01 EDT 2015
-		> Server: HTTPServerWLog
-		> Content-length: 65186
-		> Content-type: text/html
-		> 
-		> 
-		> <!-- saved from url=(0067)http://www.hockeydb.com/ihdb/stats/pdisplay.php?filter
-		> =Y&pid=160293 -->
- 		>                 <html><head><meta http-equiv="Content-Type" content="text/html;
-		>  charset=windows-1252"></head><body><div class="line-gutter-backdrop"></div><tab
-		> le><tbody><tr><td class="line-number" value="1"></td><td class="line-content"><s
-		> pan class="html-doctype">&lt;!DOCTYPE html&gt;</span> </td></tr><tr><td class="l
-		> ine-number" value="2"></td><td class="line-content"><span class="html-tag">&lt;h
-		> tml <span class="html-attribute-name">xmlns</span>="<span class="html-attribute-
-		> value">http://www.w3.org/1999/xhtml</span>" <span class="html-attribute-name">xm
-		> l:lang</span>="<span class="html-attribute-value">en</span>" <span class="html-a
-		> ttribute-name">lang</span>="<span class="html-attribute-value">en</span>"&gt;</s
-		> pan></td></tr><tr><td class="line-number" value="3"></td><td class="line-content
-		> "><span class="html-tag">&lt;head&gt;</span></td></tr><tr><td class="line-number
-		> " value="4"></td><td class="line-content"><span class="html-tag">&lt;title&gt;</
-		> span>Connor McDavid hockey statistics and profile at hockeydb.com<span class="ht
-		> ml-tag">&lt;/title&gt;</span></td></tr><tr><td class="line-number" value="5"></t
-		> d><td class="line-content"><span class="html-tag">&lt;meta <span class="html-att
+	- Runs program as constituted, without any alterations.
+	- Should display output as required in program specification and perform logging.
+	- Server command prompt: java HTTPServerWLog "Directory" 80
+		- > Apr 16, 2015 10:28:50 AM HTTPServerWLog start
+		- > INFO: Accepting connections on port 80
+		- > Apr 16, 2015 10:28:50 AM HTTPServerWLog start
+		- > INFO: Document Root: Directory
+	- Client command prompt: telnet localhost 80
+	- Client command prompt: GET McDavid.html HTTP/1.0
+		- > HTTP/1.0 200 OK
+		- > Date: Thu Apr 16 10:30:01 EDT 2015
+		- > Server: HTTPServerWLog
+		- > Content-length: 65186
+		- > Content-type: text/html
+		- > 
+		- > 
+		- > <!-- saved from url=(0067)http://www.hockeydb.com/ihdb/stats/pdisplay.php?filter=Y&pid=160293 -->
+ 		- >                 <html><head><meta http-equiv="Content-Type" content="text/html;charset=windows-1252"></head><body><div class="line-gutter-backdrop"></div><table><tbody><tr><td class="line-number" value="1"></td><td class="line-content"><span class="html-doctype">&lt;!DOCTYPE html&gt;</span> </td></tr><tr><td class="line-number" value="2"></td><td class="line-content"><span class="html-tag">&lt;html <span class="html-attribute-name">xmlns</span>="<span class="html-attribute-value">http://www.w3.org/1999/xhtml</span>" <span class="html-attribute-name">xml:lang</span>="<span class="html-attribute-value">en</span>" <span class="html-attribute-name">lang</span>="<span class="html-attribute-value">en</span>"&gt;</span></td></tr><tr><td class="line-number" value="3"></td><td class="line-content"><span class="html-tag">&lt;head&gt;</span></td></tr><tr><td class="line-number" value="4"></td><td class="line-content"><span class="html-tag">&lt;title&gt;</span>Connor McDavid hockey statistics and profile at hockeydb.com<span class="html-tag">&lt;/title&gt;</span></td></tr><tr><td class="line-number" value="5"></td><td class="line-content"><span class="html-tag">&lt;meta <span class="html-att
 		.
 		.
 		.
-		**All output as expected
-		Log after execution ("requests"):
-		> 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:30:10] "GET C:\Users\Dan\mingw\COMP 348\
-		> Assignment2\Directory\McDavid.html HTTP/1.0" 200 65186
-Normal Case 2:
-		Runs program as constituted, without any alterations.
-		Should display output as required in program specification and perform logging.
-		Server command prompt: java HTTPServerWLog "Directory" 80
-		> Apr 16, 2015 10:28:50 AM HTTPServerWLog start
-		> INFO: Accepting connections on port 80
-		> Apr 16, 2015 10:28:50 AM HTTPServerWLog start
-		> INFO: Document Root: Directory
-		Client command prompt: telnet localhost 80
-							   GET crosby.html HTTP/1.0
-		> HTTP/1.0 200 OK
-		> Date: Thu Apr 16 10:38:40 EDT 2015
-		> Server: HTTPServerWLog
-		> Content-length: 106742
-		> Content-type: text/html
-		> 
-		> <!DOCTYPE html>
-		>                <!-- saved from url=(0057)http://www.hockeydb.com/ihdb/stats/pdis
-		> play.php?filter=Y&pid=73288 -->
-		>                                <html xmlns="http://www.w3.org/1999/xhtml" xml:la
-		> ng="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; char
-		> set=windows-1252">
-		>                   <title>Sidney Crosby hockey statistics and profile at hockeydb
-		> .com</title>
-		> 
-		>             <meta name="description" content="Statistics of Sidney Crosby, a hoc
-		> key player from Cole Harbour, NS born Aug 7 1987 who was active from 2003 to 201
-		> 5.">
-		>     <meta name="format-detection" content="telephone=no">
-		> ontent="width=device-width, initial-scale=1">
-		> 
-		>                                              <link rel="StyleSheet" href="./inde
-		> x_files/standard.css" type="text/css" media="screen">
-		>                                                      <link rel="StyleSheet" href
-		> ="./index_files/standard-print.css" type="text/css" media="print">
-		>                                                                   <link rel="Sty
-		> leSheet" href="./index_files/standard-hh.css" type="text/css" media="handheld">
+
+**All output as expected
+	- Log after execution ("requests"):
+		- > 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:30:10] "GET C:\Users\Dan\mingw\COMP 348\
+		- > Assignment2\Directory\McDavid.html HTTP/1.0" 200 65186
+
+- Normal Case 2:
+	- Runs program as constituted, without any alterations.
+	- Should display output as required in program specification and perform logging.
+	- Server command prompt: java HTTPServerWLog "Directory" 80
+		- > Apr 16, 2015 10:28:50 AM HTTPServerWLog start
+		- > INFO: Accepting connections on port 80
+		- > Apr 16, 2015 10:28:50 AM HTTPServerWLog start
+		- > INFO: Document Root: Directory
+	- Client command prompt: telnet localhost 80
+	- Client command prompt: GET crosby.html HTTP/1.0
+		- > HTTP/1.0 200 OK
+		- > Date: Thu Apr 16 10:38:40 EDT 2015
+		- > Server: HTTPServerWLog
+		- > Content-length: 106742
+		- > Content-type: text/html
+		- > 
+		- > \<!DOCTYPE html>
+		- >                <!-- saved from url=(0057)http://www.hockeydb.com/ihdb/stats/pdisplay.php?filter=Y&pid=73288 -->
+		- >                                \<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">                   <title>Sidney Crosby hockey statistics and profile at hockeydb.com</title>           <meta name="description" content="Statistics of Sidney Crosby, a hockey player from Cole Harbour, NS born Aug 7 1987 who was active from 2003 to 2015.">     <meta name="format-detection" content="telephone=no">ontent="width=device-width, initial-scale=1">                                              <link rel="StyleSheet" href="./index_files/standard.css" type="text/css" media="screen">                                                      <link rel="StyleSheet" href="./index_files/standard-print.css" type="text/css" media="print">                                                                   <link rel="StyleSheet" href="./index_files/standard-hh.css" type="text/css" media="handheld">
 		.
 		.
 		.
-		**All output as expected
-		Log after execution ("requests"):
-		> 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:30:10] "GET C:\Users\Dan\mingw\COMP 348\
-		> Assignment2\Directory\McDavid.html HTTP/1.0" 200 65186
-		> 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:38:19] "GET C:\Users\Dan\mingw\COMP 348\
-		> Assignment2\Directory\crosby.html HTTP/1.0" 200 106742
-Normal Case 3:
-		Runs program as constituted, without any alterations.
-		Should display output as required in program specification and perform logging.
-		Server command prompt: java HTTPServerWLog "Directory" 80
-		> Apr 16, 2015 10:44:26 AM HTTPServerWLog start
-		> INFO: Accepting connections on port 80
-		> Apr 16, 2015 10:44:26 AM HTTPServerWLog start
-		> INFO: Document Root: Directory
-		Client command prompt: telnet localhost 80
-							   GET strome.html HTTP/1.0
-		> HTTP/1.0 200 OK
-		> Date: Thu Apr 16 10:45:27 EDT 2015
-		> Server: HTTPServerWLog
-		> Content-length: 62062
-		> Content-type: text/html
-		> 
-		> 
-		> <!-- saved from url=(0067)http://www.hockeydb.com/ihdb/stats/pdisplay.php?filter
-		> =Y&pid=170174 -->
-		>                  <html><head><meta http-equiv="Content-Type" content="text/html;
-		>  charset=windows-1252"></head><body><div class="line-gutter-backdrop"></div><tab
-		> le><tbody><tr><td class="line-number" value="1"></td><td class="line-content"><s
-		> pan class="html-doctype">&lt;!DOCTYPE html&gt;</span> </td></tr><tr><td class="l
-		> ine-number" value="2"></td><td class="line-content"><span class="html-tag">&lt;h
-		> tml <span class="html-attribute-name">xmlns</span>="<span class="html-attribute-
-		> value">http://www.w3.org/1999/xhtml</span>" <span class="html-attribute-name">xm
-		> l:lang</span>="<span class="html-attribute-value">en</span>" <span class="html-a
-		> ttribute-name">lang</span>="<span class="html-attribute-value">en</span>"&gt;</s
-		> pan></td></tr><tr><td class="line-number" value="3"></td><td class="line-content
-		> "><span class="html-tag">&lt;head&gt;</span></td></tr><tr><td class="line-number
-		> " value="4"></td><td class="line-content"><span class="html-tag">&lt;title&gt;</
-		> span>Dylan Strome hockey statistics and profile at hockeydb.com<span class="html
-		> -tag">&lt;/title&gt;</span></td></tr><tr><td class="line-number" value="5"></td>
-		> <td class="line-content"><span class="html-tag">&lt;meta <span class="html-attri
-		> bute-name">http-equiv</span>="<span class="html-attribute-value">Content-Type</s
-		> pan>" <span class="html-attribute-name">content</span>="<span class="html-attrib
-		> ute-value">text/html; charset=windows-1252</span>" /&gt;</span></td></tr><tr><td
-		>  class="line-number" value="6"></td><td class="line-content"><span class="html-t
-		> ag">&lt;meta <span class="html-attribute-name">name</span>="<span class="html-at
-		> tribute-value">description</span>" <span class="html-attribute-name">content</sp
+
+**All output as expected
+	- Log after execution ("requests"):
+		- > 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:30:10] "GET C:\Users\Dan\mingw\COMP 348\
+		- > Assignment2\Directory\McDavid.html HTTP/1.0" 200 65186
+		- > 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:38:19] "GET C:\Users\Dan\mingw\COMP 348\
+		- > Assignment2\Directory\crosby.html HTTP/1.0" 200 106742
+
+- Normal Case 3:
+	- Runs program as constituted, without any alterations.
+	- Should display output as required in program specification and perform logging.
+	- Server command prompt: java HTTPServerWLog "Directory" 80
+		- > Apr 16, 2015 10:44:26 AM HTTPServerWLog start
+		- > INFO: Accepting connections on port 80
+		- > Apr 16, 2015 10:44:26 AM HTTPServerWLog start
+		- > INFO: Document Root: Directory
+	- Client command prompt: telnet localhost 80
+	- Client command prompt: GET strome.html HTTP/1.0
+		- > HTTP/1.0 200 OK
+		- > Date: Thu Apr 16 10:45:27 EDT 2015
+		- > Server: HTTPServerWLog
+		- > Content-length: 62062
+		- > Content-type: text/html
+		- > 
+		- > 
+		- > \<!-- saved from url=(0067)http://www.hockeydb.com/ihdb/stats/pdisplay.php?filter=Y&pid=170174 -->
+		- >                  \<html><head><meta http-equiv="Content-Type" content="text/html;charset=windows-1252"></head><body><div class="line-gutter-backdrop"></div><table><tbody><tr><td class="line-number" value="1"></td><td class="line-content"><span class="html-doctype">&lt;!DOCTYPE html&gt;</span> </td></tr><tr><td class="line-number" value="2"></td><td class="line-content"><span class="html-tag">&lt;html <span class="html-attribute-name">xmlns</span>="<span class="html-attribute-value">http://www.w3.org/1999/xhtml</span>" <span class="html-attribute-name">xml:lang</span>="<span class="html-attribute-value">en</span>" <span class="html-attribute-name">lang</span>="<span class="html-attribute-value">en</span>"&gt;</span></td></tr><tr><td class="line-number" value="3"></td><td class="line-content"><span class="html-tag">&lt;head&gt;</span></td></tr><tr><td class="line-number" value="4"></td><td class="line-content"><span class="html-tag">&lt;title&gt;</span>Dylan Strome hockey statistics and profile at hockeydb.com<span class="html-tag">&lt;/title&gt;</span></td></tr><tr><td class="line-number" value="5"></td><td class="line-content"><span class="html-tag">&lt;meta <span class="html-attribute-name">http-equiv</span>="<span class="html-attribute-value">Content-Type</span>" <span class="html-attribute-name">content</span>="<span class="html-attribute-value">text/html; charset=windows-1252</span>" /&gt;</span></td></tr><tr><td class="line-number" value="6"></td><td class="line-content"><span class="html-tag">&lt;meta <span class="html-attribute-name">name</span>="<span class="html-attribute-value">description</span>" <span class="html-attribute-name">content
 		.
 		.
 		.
-		**All output as expected
-		Log after execution ("requests"):
-		> 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:30:10] "GET C:\Users\Dan\mingw\COMP 348\
-		> Assignment2\Directory\McDavid.html HTTP/1.0" 200 65186
-		> 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:38:19] "GET C:\Users\Dan\mingw\COMP 348\
-		> Assignment2\Directory\crosby.html HTTP/1.0" 200 106742
-		> 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:45:10] "GET C:\Users\Dan\mingw\COMP 348\
-		> Assignment2\Directory\strome.html HTTP/1.0" 200 62062
+
+**All output as expected
+	- Log after execution ("requests"):
+		- > 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:30:10] "GET C:\Users\Dan\mingw\COMP 348\
+		- > Assignment2\Directory\McDavid.html HTTP/1.0" 200 65186
+		- > 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:38:19] "GET C:\Users\Dan\mingw\COMP 348\
+		- > Assignment2\Directory\crosby.html HTTP/1.0" 200 106742
+		- > 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:45:10] "GET C:\Users\Dan\mingw\COMP 348\
+		- > Assignment2\Directory\strome.html HTTP/1.0" 200 62062
+
 Error Case 1 (file doesn't exist):
-		Server command prompt: java HTTPServerWLog "Directory" 80
-		> Apr 16, 2015 11:10:18 AM HTTPServerWLog start
-		> INFO: Accepting connections on port 80
-		> Apr 16, 2015 11:10:18 AM HTTPServerWLog start
-		> INFO: Document Root: Directory
-		Client command prompt: telnet localhost 80
-							   GET rto HTTP/1.0
-		> HTTP/1.0 404 File Not Found
-		> Date: Thu Apr 16 11:11:28 EDT 2015
-		> Server: HTTPServerWLog
-		> Content-length: 117
-		> Content-type: text/html; charset=utf-8
-		> 
-		> <HTML>
-		> <HEAD><TITLE>File Not Found</TITLE>
-		> </HEAD>
-		> <BODY><H1>HTTP Error 404: File Not Found</H1>
-		> </BODY></HTML>
-		**All output as expected
-		Log after execution ("requests"):
-		> 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:30:10] "GET C:\Users\Dan\mingw\COMP 348\
-		> Assignment2\Directory\McDavid.html HTTP/1.0" 200 65186
-		> 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:38:19] "GET C:\Users\Dan\mingw\COMP 348\
-		> Assignment2\Directory\crosby.html HTTP/1.0" 200 106742
-		> 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:45:10] "GET C:\Users\Dan\mingw\COMP 348\
-		> Assignment2\Directory\strome.html HTTP/1.0" 200 62062
-		> 0:0:0:0:0:0:0:1 - - [16/Apr/2015:11:11:19] "GET C:\Users\Dan\mingw\COMP 348\
-		> Assignment2\Directory\rto HTTP/1.0" 404 0
-Error Case 2 (invalid request type):
-		Server command prompt: java HTTPServerWLog "Directory" 80
-		> Apr 16, 2015 11:14:16 AM HTTPServerWLog start
-		> INFO: Accepting connections on port 80
-		> Apr 16, 2015 11:14:16 AM HTTPServerWLog start
-		> INFO: Document Root: Directory
-		Client command prompt: telnet localhost 80
-							   POST index.html HTTP/1.0
-		> <HTML>
-		> <HEAD><TITLE>Not Implemented</TITLE>
-		> </HEAD>
-		> <BODY><H1>HTTP Error 501: Not Implemented</H1>
-		> </BODY></HTML>
-		**All output as expected
-		Log after execution ("requests"):
-		> 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:30:10] "GET C:\Users\Dan\mingw\COMP 348\
-		> Assignment2\Directory\McDavid.html HTTP/1.0" 200 65186
-		> 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:38:19] "GET C:\Users\Dan\mingw\COMP 348\
-		> Assignment2\Directory\crosby.html HTTP/1.0" 200 106742
-		> 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:45:10] "GET C:\Users\Dan\mingw\COMP 348\
-		> Assignment2\Directory\strome.html HTTP/1.0" 200 62062
-		> 0:0:0:0:0:0:0:1 - - [16/Apr/2015:11:11:19] "GET C:\Users\Dan\mingw\COMP 348\
-		> Assignment2\Directory\rto HTTP/1.0" 404 0
-		> 0:0:0:0:0:0:0:1 - - [16/Apr/2015:11:14:56] "POST C:\Users\Dan\mingw\COMP 348\
-		> Assignment2\Directory\index.html" 501 0
-Testing Log File with Program from Assignment 1:
-		Command prompt: java MyPooledWeblog "access_log/requests" 1
-		> 5       0:0:0:0:0:0:0:1
-		> Total entries: 5
-		Command prompt: java MyPooledWeblog "access_log/requests" 2
-		> The total bytes transmitted was 233990
-		> The total entries examined was 5
-		Command prompt: java MyPooledWeblog "access_log/requests" 3
-		> 233990  0:0:0:0:0:0:0:1
-		> Total bytes transmitted was 233990
-		> The total entries examined was 5
-		**All output as expected
+	- Server command prompt: java HTTPServerWLog "Directory" 80
+		- > Apr 16, 2015 11:10:18 AM HTTPServerWLog start
+		- > INFO: Accepting connections on port 80
+		- > Apr 16, 2015 11:10:18 AM HTTPServerWLog start
+		- > INFO: Document Root: Directory
+	- Client command prompt: telnet localhost 80
+	- Client command prompt: GET rto HTTP/1.0
+		- > HTTP/1.0 404 File Not Found
+		- > Date: Thu Apr 16 11:11:28 EDT 2015
+		- > Server: HTTPServerWLog
+		- > Content-length: 117
+		- > Content-type: text/html; charset=utf-8
+		- > 
+		- > <HTML>
+		- > <HEAD><TITLE>File Not Found</TITLE>
+		- > </HEAD>
+		- > <BODY><H1>HTTP Error 404: File Not Found</H1>
+		- > </BODY></HTML>
 
+**All output as expected
+	- Log after execution ("requests"):
+		- > 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:30:10] "GET C:\Users\Dan\mingw\COMP 348\
+		- > Assignment2\Directory\McDavid.html HTTP/1.0" 200 65186
+		- > 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:38:19] "GET C:\Users\Dan\mingw\COMP 348\
+		- > Assignment2\Directory\crosby.html HTTP/1.0" 200 106742
+		- > 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:45:10] "GET C:\Users\Dan\mingw\COMP 348\
+		- > Assignment2\Directory\strome.html HTTP/1.0" 200 62062
+		- > 0:0:0:0:0:0:0:1 - - [16/Apr/2015:11:11:19] "GET C:\Users\Dan\mingw\COMP 348\
+		- > Assignment2\Directory\rto HTTP/1.0" 404 0
 
-		The first five test cases demonstrate that the log file ("requests") is correctly
+- Error Case 2 (invalid request type):
+	- Server command prompt: java HTTPServerWLog "Directory" 80
+		- > Apr 16, 2015 11:14:16 AM HTTPServerWLog start
+		- > INFO: Accepting connections on port 80
+		- > Apr 16, 2015 11:14:16 AM HTTPServerWLog start
+		- > INFO: Document Root: Directory
+	- Client command prompt: telnet localhost 80
+	- Client command prompt: POST index.html HTTP/1.0
+		- > <HTML>
+		- > <HEAD><TITLE>Not Implemented</TITLE>
+		- > </HEAD>
+		- > <BODY><H1>HTTP Error 501: Not Implemented</H1>
+		- > </BODY></HTML>
+
+**All output as expected
+	- Log after execution ("requests"):
+		- > 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:30:10] "GET C:\Users\Dan\mingw\COMP 348\
+		- > Assignment2\Directory\McDavid.html HTTP/1.0" 200 65186
+		- > 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:38:19] "GET C:\Users\Dan\mingw\COMP 348\
+		- > Assignment2\Directory\crosby.html HTTP/1.0" 200 106742
+		- > 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:45:10] "GET C:\Users\Dan\mingw\COMP 348\
+		- > Assignment2\Directory\strome.html HTTP/1.0" 200 62062
+		- > 0:0:0:0:0:0:0:1 - - [16/Apr/2015:11:11:19] "GET C:\Users\Dan\mingw\COMP 348\
+		- > Assignment2\Directory\rto HTTP/1.0" 404 0
+		- > 0:0:0:0:0:0:0:1 - - [16/Apr/2015:11:14:56] "POST C:\Users\Dan\mingw\COMP 348\
+		- > Assignment2\Directory\index.html" 501 0
+
+- Testing Log File with Program from Assignment 1:
+	- Command prompt: java MyPooledWeblog "access_log/requests" 1
+		- > 5       0:0:0:0:0:0:0:1
+		- > Total entries: 5
+		- Command prompt: java MyPooledWeblog "access_log/requests" 2
+		- > The total bytes transmitted was 233990
+		- > The total entries examined was 5
+		- Command prompt: java MyPooledWeblog "access_log/requests" 3
+		- > 233990  0:0:0:0:0:0:0:1
+		- > Total bytes transmitted was 233990
+		- > The total entries examined was 5
+
+**All output as expected
+
+Discussion: The first five test cases demonstrate that the log file ("requests") is correctly
 		being written to on each request, with the information specific to each individual
 		request.  The information is formatted identically to that of the access log files
-		used in Assignment 1.  These cases log address, time, request, response code, and 
+		used in FileHTTPServer.  These cases log address, time, request, response code, and 
 		bytes transmitted using the different webpages.  
 		The results displayed were tested against manual inspection performed outside the 
 		program on sources.  All manual inspections matched up with the program results.
 		The last set of tests executes the log file produced by the program as input to
-		the MyPooledWeblog program from assignment 1.  All results are as expected.
-		**To perform the set of tests with the program from Assignment 1, the "requests"
-		log file must be copied over into the access_log directory in assignment 1 directory.
-		**Raw output is sent when a file is successfully requested in order to allow
+		the MyPooledWeblog application.  All results are as expected.
+
+**To perform the set of tests with the program from MyPooledWeblog the "requests"
+		log file must be copied over into the access_log directory in MyPooledWeblog directory.
+
+**Raw output is sent when a file is successfully requested in order to allow
 		different types of files to be served.
