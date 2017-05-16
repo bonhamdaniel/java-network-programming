@@ -19,16 +19,16 @@ Format of Sending Messages:
 *An attachment is provided after the file on the command line and is sent along
              with the email message.  Files accepted are images or .zip attachments.
  
- Retrieval Application (GetMail.java)
+Retrieval Application (GetMail.java)
  
- - Program Purpose:
+- Program Purpose:
       Introduces the Java Networking concepts of receiving emails associated with the 
       JavaMail API.
 - Compile: javac GetMail.java (Must first include javax.mail.jar in the CLASSPATH)
 - Execution: java GetMail [server] [user] [password] or java GetMail [server] [user] [password] [email#]
 - Notes:  The program must access a valid email account.
 - Classes: 
-        - GetMail - includes all required functionality. Only has the main method and the 
+      - GetMail - includes all required functionality. Only has the main method and the 
           method receiveMail.
 - Variables:
       - properties - Properties - used to store the email server properties
