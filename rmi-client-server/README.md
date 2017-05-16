@@ -40,3 +40,19 @@ Client Application
 	- getPrime - LargestPrimeNumber - used to store remote object retrieved by looking up
 				   name.
 	- prime - BigInteger - used to store result of invoking remote method
+
+Server Test Plan
+- Normal Case 1:
+		***rmiregistry must be running before server starts***
+		***all necessary jars and classes must be in network accessible folder***
+		Runs program as constituted, without any alterations.
+		Server command prompt: java -cp c:users\dan\mingw\comp_348\assignment3;c:/app/Dan
+							   \product\12.1.0\dbhome_1\rda\da\public_html\classes\ -Djava.
+							   rmi.server.codebase=file:/c:/app/Dan/product/12.1.0/dbhome_1
+							   /rda/da/public_html/classes/ -Djava.security.policy=server.po
+							   licy LargestPrimeNumberRMIServer
+		> LargestPrimeNumberRMIServer bound
+
+		This simply demonstrates that the server runs properly.  All testing of the actual
+		interaction with the client and of the program computation is contained in the client
+		side documentation.
