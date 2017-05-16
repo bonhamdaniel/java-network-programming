@@ -76,8 +76,8 @@ public class HTTPServerWLog {
 		
 			try {
 				// Sets up FileHandlers for auditLogger and errorLogger
-				FileHandler requestHandler = new FileHandler("C:/users/Dan/mingw/COMP 348/Assignment2/requests", true);
-				FileHandler errorHandler = new FileHandler("C:/users/Dan/mingw/COMP 348/Assignment2/errors", true);
+				FileHandler requestHandler = new FileHandler("requests", true);
+				FileHandler errorHandler = new FileHandler("errors", true);
 				MyFormatter formatter = new MyFormatter();
 				requestHandler.setFormatter(formatter); // specifies formatting
 				errorHandler.setFormatter(new SimpleFormatter()); // specifies formatting
