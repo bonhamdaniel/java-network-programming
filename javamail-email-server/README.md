@@ -5,6 +5,7 @@ JavaMail Email Application - email programs that:
   (d) sends a message as in part c, but adds the capability of attaching a file.
 
 Format of Sending Messages:
+
 - Server: email server
 - User: email account (also used as the From: in the email)
 - Password: email account password
@@ -19,6 +20,7 @@ Format of Sending Messages:
              with the email message.  Files accepted are images or .zip attachments.
  
  Retrieval Application (GetMail.java)
+ 
  - Program Purpose:
       Introduces the Java Networking concepts of receiving emails associated with the 
       JavaMail API.
@@ -26,7 +28,7 @@ Format of Sending Messages:
 - Execution: java GetMail [server] [user] [password] or java GetMail [server] [user] [password] [email#]
 - Notes:  The program must access a valid email account.
 - Classes: 
-      - GetMail - includes all required functionality. Only has the main method and the 
+        - GetMail - includes all required functionality. Only has the main method and the 
           method receiveMail.
 - Variables:
       - properties - Properties - used to store the email server properties
