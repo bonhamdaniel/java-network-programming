@@ -8,4 +8,3 @@ This repository incldes the following applications:
 3. http-server: FileHTTPServer.java, Directory/crosby.html, Directory/McDavid.html, Directory/strome.html, and README.md - introduces the Java Networking concepts of server I/O, Sockets, ServerSockets, etc.
 4. http-server-logging: HTTPServerWLog.java, Directory/crosby.html, Directory/McDavid.html, Directory/strome.html, and README.md - introduces the Java Networking concept of Logging.
 5. custom-server-protocol: PodServer.java, mypoems.txt, PodProtocol.rtf, and README.md - introduces the concept of creating a custom protocol for server communication.
-6. 
