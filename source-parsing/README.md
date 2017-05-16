@@ -3,7 +3,7 @@ SourceViewer.java - source viewer that incorporates a search function. When prov
 - Program Purpose:
 		Introduces the Java Networking concepts of URLs, URLConnections, and parsing.
 - Compile: javac SourceViewer.java
-- Execution: java SourceViewer URL/IP /<search string/>
+- Execution: java SourceViewer URL/IP [search string]
 - Notes: No user input is necessary outside of command line , everything for this program 
 		is hardcoded
 - Classes: 
