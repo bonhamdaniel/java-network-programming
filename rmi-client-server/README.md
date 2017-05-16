@@ -1,8 +1,31 @@
 Client & Server using Java RMI - system using Java RMI, such that the client can ask the server to generate a largest prime number within a range set by the user on the client.
 
+Server Application
 - Program Purpose:
 		Introduces the Java Networking concepts RMI.
 Compile: javac -cp c:\app\Dan\product\12.1.0\dbhome_1\rda\da\public_html\classes\compute.
+		 jar LargestPrimeNumberRMIServer.java
+Execution: java -cp c:users\dan\mingw\comp_348\assignment3;c:\app\Dan\product\12.1.0\dbh
+		   ome_1\rda\da\public_html\classes\ -Djava.rmi.server.codebase=file:/c:/app/Dan/
+		   product/12.1.0/dbhome_1/rda/da/public_html/classes/ -Djava.security.policy=ser
+		   ver.policy LargestPrimeNumberRMIServer
+Notes:  The client side of the program is run from a different command prompt.
+Classes: 
+		LargestPrimeRMIServer - includes all server functionality. Only has the constructor
+		and the main method.
+Variables:
+		prime - boolean - used to store value that flags whether a number is prime
+		max - BigInteger - used to store the max prime number in the given range
+		range - BigInteger - used to store the range of numbers to use, given by client
+		name - String - used to store the object name, passed to registry
+		server - LargestPrimeNumber - used to store an instance of the RMI server
+		stub - LargestPrimeNumber - used to store the stub exported to the RMI runtime
+		registry - Registry - used to store the RMI registry
+
+Client Application
+- Program Purpose:
+		Introduces the Java Networking concepts RMI.
+- Compile: javac -cp c:\app\Dan\product\12.1.0\dbhome_1\rda\da\public_html\classes\compute.
 		 jar LargestPrimeNumberRMIClient.java
 Execution: java -cp c:users\dan\mingw\comp_348\assignment3;c:\app\Dan\product\12.1.0\db
 		   home_1\rda\da\public_html\classes\ -Djava.rmi.server.codebase=file:/c:/app/Dan
