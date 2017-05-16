@@ -76,8 +76,6 @@ Test Plan
 		.
 		.
 		.
-
-**All output as expected
 	- Log after execution ("requests"):
 		- > 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:30:10] "GET C:\Users\Dan\mingw\COMP 348\
 		- > Assignment2\Directory\McDavid.html HTTP/1.0" 200 65186
@@ -104,8 +102,6 @@ Test Plan
 		.
 		.
 		.
-
-**All output as expected
 	- Log after execution ("requests"):
 		- > 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:30:10] "GET C:\Users\Dan\mingw\COMP 348\
 		- > Assignment2\Directory\McDavid.html HTTP/1.0" 200 65186
@@ -134,8 +130,6 @@ Test Plan
 		.
 		.
 		.
-
-**All output as expected
 	- Log after execution ("requests"):
 		- > 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:30:10] "GET C:\Users\Dan\mingw\COMP 348\
 		- > Assignment2\Directory\McDavid.html HTTP/1.0" 200 65186
@@ -144,7 +138,7 @@ Test Plan
 		- > 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:45:10] "GET C:\Users\Dan\mingw\COMP 348\
 		- > Assignment2\Directory\strome.html HTTP/1.0" 200 62062
 
-Error Case 1 (file doesn't exist):
+- Error Case 1 (file doesn't exist):
 	- Server command prompt: java HTTPServerWLog "Directory" 80
 		- > Apr 16, 2015 11:10:18 AM HTTPServerWLog start
 		- > INFO: Accepting connections on port 80
@@ -163,8 +157,6 @@ Error Case 1 (file doesn't exist):
 		- > </HEAD>
 		- > <BODY><H1>HTTP Error 404: File Not Found</H1>
 		- > </BODY></HTML>
-
-**All output as expected
 	- Log after execution ("requests"):
 		- > 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:30:10] "GET C:\Users\Dan\mingw\COMP 348\
 		- > Assignment2\Directory\McDavid.html HTTP/1.0" 200 65186
@@ -188,8 +180,6 @@ Error Case 1 (file doesn't exist):
 		- > </HEAD>
 		- > <BODY><H1>HTTP Error 501: Not Implemented</H1>
 		- > </BODY></HTML>
-
-**All output as expected
 	- Log after execution ("requests"):
 		- > 0:0:0:0:0:0:0:1 - - [16/Apr/2015:10:30:10] "GET C:\Users\Dan\mingw\COMP 348\
 		- > Assignment2\Directory\McDavid.html HTTP/1.0" 200 65186
