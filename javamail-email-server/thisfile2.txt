@@ -1,0 +1,10 @@
+Server: smtp.gmail.com
+User: ***********
+Password: ***********
+To: ***********
+CC: ***********, ***********, ***********
+BCC: ***********, ***********, ***********
+Subject: Email Server Project
+Body: Sorry, I'm doing a project and needed to use 7 different e-mail addresses to send a message 
+to.  You may get inundated with this message :/
+EOF
