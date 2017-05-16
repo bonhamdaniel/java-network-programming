@@ -42,4 +42,4 @@ Variables:
       mailStoreType - Store - used to store the type of Store used to receive emails
       username - String - used to store the username of the account to access
       password - String - used to store the password of the account to access
-      option - int - used to store the email # theuse would like to access
+      option - int - used to store the email # theuse would like to access.
