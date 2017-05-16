@@ -42,6 +42,8 @@ Client Application
 	- prime - BigInteger - used to store result of invoking remote method
 
 Server Test Plan
+- ***Server must be running before client starts***
+- ***all necessary jars and classes must be in network accessible folder***
 - Normal Case 1:
 	- Runs program as constituted, without any alterations.
 	- Server command prompt: java -cp %cd%;c:\home\public_html\classes\ -Djava.rmi.server.codebase=file:/c:\home\public_html\classes\ -Djava.security.policy=server.policy LargestPrimeNumberRMIServer
@@ -52,57 +54,44 @@ Discussion: This simply demonstrates that the server runs properly.  All testing
 		side documentation.
 		
 Client Test Plan
+- ***Server must be running before client starts***
+- ***all necessary jars and classes must be in network accessible folder***
 - Normal Case 1:
-		***Server must be running before client starts***
-		***all necessary jars and classes must be in network accessible folder***
-		Runs program as constituted, without any alterations.
-		Should display output as required in program specification.
-		Server command prompt: java -cp c:users\dan\mingw\comp_348\assignment3;c:\app\Dan
-		\product\12.1.0\dbhome_1\rda\da\public_html\classes\ -Djava.rmi.server.codebase=f
-		ile:/c:/app/Dan/product/12.1.0/dbhome_1/rda/da/public_html/classes/ -Djava.securi
-		ty.policy=client.policy LargestPrimeNumberRMIClient DanSamsung 5789
-		> 5783
-		**Output correct**
+	- Runs program as constituted, without any alterations.
+	- Should display output as required in program specification.
+	- Client command prompt: java -cp %cd%;c:\home\public_html\classes -Djava.rmi.server.codebase=file:/c:\home\public_html\classes -Djava.security.policy=client.policy LargestPrimeNumberRMIClient DanSamsung 5789
+		- > 5783
 
-Normal Case 2:
-		***Server must be running before client starts***
-		***all necessary jars and classes must be in network accessible folder***
-		Runs program as constituted, without any alterations.
-		Should display output as required in program specification.
-		Server command prompt: java -cp c:users\dan\mingw\comp_348\assignment3;c:\app\Dan
-		\product\12.1.0\dbhome_1\rda\da\public_html\classes\ -Djava.rmi.server.codebase=f
-		ile:/c:/app/Dan/product/12.1.0/dbhome_1/rda/da/public_html/classes/ -Djava.securi
-		ty.policy=client.policy LargestPrimeNumberRMIClient DanSamsung 487
-		> 479
-		**Output correct**
+**Output correct**
+
+- Normal Case 2:
+	- Runs program as constituted, without any alterations.
+	- Should display output as required in program specification.
+	- Client command prompt: java -cp %cd%;c:\home\public_html\classes -Djava.rmi.server.codebase=file:/c:\home\public_html\classes -Djava.security.policy=client.policy LargestPrimeNumberRMIClient DanSamsung 487
+		- > 479
+
+**Output correct**
 
 Normal Case 3:
-		***Server must be running before client starts***
-		***all necessary jars and classes must be in network accessible folder***
-		Runs program as constituted, without any alterations.
-		Should display output as required in program specification.
-		Server command prompt: java -cp c:users\dan\mingw\comp_348\assignment3;c:\app\Dan
-		\product\12.1.0\dbhome_1\rda\da\public_html\classes\ -Djava.rmi.server.codebase=f
-		ile:/c:/app/Dan/product/12.1.0/dbhome_1/rda/da/public_html/classes/ -Djava.securi
-		ty.policy=client.policy LargestPrimeNumberRMIClient DanSamsung 9999
-		> 9973
-		**Output correct**
+	- Runs program as constituted, without any alterations.
+	- Should display output as required in program specification.
+	- Client command prompt: java -cp %cd%;c:\home\public_html\classes -Djava.rmi.server.codebase=file:/c:\home\public_html\classes -Djava.security.policy=client.policy LargestPrimeNumberRMIClient DanSamsung 9999
+		- > 9973
 
-Exception Case 1:
-		***Server must be running before client starts***
-		***all necessary jars and classes must be in network accessible folder***
-		Runs program as constituted, without any alterations.
-		Should display output as required in program specification.
-		Server command prompt: java -cp c:users\dan\mingw\comp_348\assignment3;c:\app\Dan
-		\product\12.1.0\dbhome_1\rda\da\public_html\classes\ -Djava.rmi.server.codebase=f
-		ile:/c:/app/Dan/product/12.1.0/dbhome_1/rda/da/public_html/classes/ -Djava.securi
-		ty.policy=client.policy LargestPrimeNumberRMIClient DanSamsung -56
-		> 0
-		**Output correct**
+**Output correct**
 
-		The first three test cases demonstrate that the program is working correctly by 
+- Exception Case 1:
+	- Runs program as constituted, without any alterations.
+	- Should display output as required in program specification.
+	- Client command prompt: java -cp %cd%;c:\home\public_html\classes -Djava.rmi.server.codebase=file:/c:\home\public_html\classes -Djava.security.policy=client.policy LargestPrimeNumberRMIClient DanSamsung -56
+		- > 0
+
+**Output correct**
+
+Discussion: The first three test cases demonstrate that the program is working correctly by 
 		displaying the correct result given the specified range. 
 		The results displayed were tested against manual inspection performed outside the 
 		program on the ranges.  All manual inspections matched up with the program results.
 		The fourth case shows the result when a negative number is provided.
-		***Argument provided at command line must be a valid number, no strings***
+
+***Argument provided at command line must be a valid number, no strings***
