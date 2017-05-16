@@ -57,9 +57,9 @@ Test Plan
 		- > Content-type: text/html
 		- > 
 		- > 
-		- > <!-- saved from url=(0067)http://www.hockeydb.com/ihdb/stats/pdisplay.php?filter
+		- > \<!-- saved from url=(0067)http://www.hockeydb.com/ihdb/stats/pdisplay.php?filter
 		- > =Y&pid=160293 -->
- 		- >                 <html><head><meta http-equiv="Content-Type" content="text/html;
+ 		- >                 \<html><head><meta http-equiv="Content-Type" content="text/html;
 		- >  charset=windows-1252"></head><body><div class="line-gutter-backdrop"></div><tab
 		- > le><tbody><tr><td class="line-number" value="1"></td><td class="line-content"><s
 		- > pan class="html-doctype">&lt;!DOCTYPE html&gt;</span> </td></tr><tr><td class="l
