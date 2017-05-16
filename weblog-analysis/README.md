@@ -3,7 +3,7 @@ MyPooledWeblog.java - reads a weblog and tallies statistics on the log entries b
 - Program Purpose:
 		Introduces the Java Networking concepts of streams, threads, futures, and weblogs.
 - Compile: javac MyPooledWeblog.java
-- Execution: java MyPooledWeblog "access_log/access_log" <option>
+- Execution: java MyPooledWeblog "access_log/access_log" [option]
 - Notes: No user input is necessary, everything for this program is hardcoded
 - Classes: 
 	- MyPooledWeblog - contains everything necessary for proper program execution, as 
