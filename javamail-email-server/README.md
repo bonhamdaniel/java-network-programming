@@ -88,34 +88,34 @@ Send with Attachment Application (SendProgramWAttachment.java)
 - Execution: java SendProgramWAttachment thisfile.txt [attachment file]
 - Notes:  The program must access a valid email account.
 - Classes: 
-      - SendProgramWAttachment - includes all required functionality. Only has the main method.
+   - SendProgramWAttachment - includes all required functionality. Only has the main method.
 - Variables:
-      - emailFile - File - used to store the file provided at the command line, which 
+   - emailFile - File - used to store the file provided at the command line, which 
             contains the contents of the email to be sent.
-      - inFile - BufferedReader - used to store buffered reader attached to the email file
-      - host - String - used to store the email server used, retrieved from the email file
-      - from - String - used to store the account to send the email from, retrieved from 
+   - inFile - BufferedReader - used to store buffered reader attached to the email file
+   - host - String - used to store the email server used, retrieved from the email file
+   - from - String - used to store the account to send the email from, retrieved from 
             the email file
-      - username - String - used to store the username of the sender account, retrieved from
+   - username - String - used to store the username of the sender account, retrieved from
             the email file
-      - password - String - used to store the password of the sender account, retrieved from
+   - password - String - used to store the password of the sender account, retrieved from
             the email file
-      - to - String - used to store the primary recipient of the email, retrieved from the 
+   - to - String - used to store the primary recipient of the email, retrieved from the 
             email file
-      - ccLine - String - used to store a line of comma separated cc addresses for the email, 
+   - ccLine - String - used to store a line of comma separated cc addresses for the email, 
             retrieved from the email file
-      - bccLine - String - used to store a line of comma separated bcc addresses for the email,
+   - bccLine - String - used to store a line of comma separated bcc addresses for the email,
             retrieved from the email file
-      - subject - String - used to store the subject of the email, retrieved from the email file
-      - body - String - used to store the body of the email, retrieved from the email file
-      - line - String - used to store each line as it is read in from the email file
-      - props - Properties - used to store the server properties used to send the email
-      - session - Session - used to store the Session instance used to send the email
-      - message - Message - used to store the various components of the email message
-      - messageBodyPart - BodyPart - used to store a body part included in the message
-      - multipart - Multipart - used to store a default Multipart used for message
-      - filename - String - used to store the attachment file provided at the command line
-      - source - DataSource - used to store a FileDatSource created with attachment file
+   - subject - String - used to store the subject of the email, retrieved from the email file
+   - body - String - used to store the body of the email, retrieved from the email file
+   - line - String - used to store each line as it is read in from the email file
+   - props - Properties - used to store the server properties used to send the email
+   - session - Session - used to store the Session instance used to send the email
+   - message - Message - used to store the various components of the email message
+   - messageBodyPart - BodyPart - used to store a body part included in the message
+   - multipart - Multipart - used to store a default Multipart used for message
+   - filename - String - used to store the attachment file provided at the command line
+   - source - DataSource - used to store a FileDatSource created with attachment file
 
 GetMail Test Plan
 - ***all necessary jars and classes must be in CLASSPATH***
