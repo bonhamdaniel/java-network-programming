@@ -1,6 +1,3 @@
-// Code adapted from SendEmail.java found in the tutorial at 
-// http://www.tutorialspoint.com/javamail_api/
-
 /*
 Title: SendProgram1.java
 Description: Simple email program that connects to the smtp.gmail.com server and sends 
