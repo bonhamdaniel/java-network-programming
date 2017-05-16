@@ -51,20 +51,19 @@ Send Mail Application
 - Program Purpose:
       Introduces the Java Networking concepts of sending emails associated with the 
       JavaMail API.
-Compile: javac SendProgram1.java
-         (Must first include javax.mail.jar in the CLASSPATH)
-Execution: java SendProgram1 thisfile.txt
-Notes:  The program use my personal gmail account for sending.
-Classes: 
-      SendProgram1 - includes all required functionality. Only has the main method.
-Variables:
-      emailFile - File - used to store the file provided at the command line, which 
+- Compile: javac SendProgram1.java (Must first include javax.mail.jar in the CLASSPATH)
+- Execution: java SendProgram1 thisfile.txt
+- Notes:  The program must use a valid email account.
+- Classes: 
+  - SendProgram1 - includes all required functionality. Only has the main method.
+- Variables:
+   - emailFile - File - used to store the file provided at the command line, which 
             contains the contents of the email to be sent.
-      inFile - BufferedReader - used to store buffered reader attached to the email file
-      host - String - used to store the email server used, retrieved from the email file
-      from - String - used to store the account to send the email from, retrieved from 
+   - inFile - BufferedReader - used to store buffered reader attached to the email file
+   - host - String - used to store the email server used, retrieved from the email file
+   - from - String - used to store the account to send the email from, retrieved from 
             the email file
-      username - String - used to store the username of the sender account, retrieved from
+   - username - String - used to store the username of the sender account, retrieved from
             the email file
       password - String - used to store the password of the sender account, retrieved from
             the email file
