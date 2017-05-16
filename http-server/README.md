@@ -140,12 +140,12 @@ Test Plan
 **All output as expected
 
 - Example Output from Server Command Prompt:
-		- >Apr 02, 2015 4:50:22 PM FileHTTPServer start
-		- >INFO: Accepting connections on port 80
-		- >Apr 02, 2015 4:50:22 PM FileHTTPServer start
-		- >INFO: Document Root: Directory
-		- >Apr 02, 2015 4:50:35 PM FileHTTPServer$RequestProcessor call
-		- >INFO: /0:0:0:0:0:0:0:1:54364 GET index.html HTTP/1.0
+	- >Apr 02, 2015 4:50:22 PM FileHTTPServer start
+	- >INFO: Accepting connections on port 80
+	- >Apr 02, 2015 4:50:22 PM FileHTTPServer start
+	- >INFO: Document Root: Directory
+	- >Apr 02, 2015 4:50:35 PM FileHTTPServer$RequestProcessor call
+	- >INFO: /0:0:0:0:0:0:0:1:54364 GET index.html HTTP/1.0
 
 Discussion: The first three test cases demonstrate that the search option that is specified 
 		in the requirements is working correctly, different files can be requested of the
