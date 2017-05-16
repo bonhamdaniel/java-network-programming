@@ -31,7 +31,7 @@ Retrieval Application (GetMail.java)
       - GetMail - includes all required functionality. Only has the main method and the 
           method receiveMail.
 - Variables:
-      - properties - Properties - used to store the email server properties
+  - properties - Properties - used to store the email server properties
       - emailSession - Session - used to store the Session used for the email Session
       - emailStore - Store - used to store the imaps Store used for receiving emails
       - emailFolder - Folder - used to store the Folder to access for receiving emails
