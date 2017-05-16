@@ -72,7 +72,7 @@ Client Test Plan
 
 **Output correct**
 
-Normal Case 3:
+- Normal Case 3:
 	- Runs program as constituted, without any alterations.
 	- Should display output as required in program specification.
 	- Client command prompt: java -cp %cd%;c:\home\public_html\classes -Djava.rmi.server.codebase=file:/c:\home\public_html\classes -Djava.security.policy=client.policy LargestPrimeNumberRMIClient DanSamsung 9999
