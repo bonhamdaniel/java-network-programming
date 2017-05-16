@@ -47,7 +47,7 @@ Retrieval Application (GetMail.java)
   - option - int - used to store the email # theuse would like to access.
 
 
-Send Mail Application
+Send Mail Application (SendProgram1.java)
 - Program Purpose:
       Introduces the Java Networking concepts of sending emails associated with the 
       JavaMail API.
@@ -65,6 +65,40 @@ Send Mail Application
             the email file
    - username - String - used to store the username of the sender account, retrieved from
             the email file
+   - password - String - used to store the password of the sender account, retrieved from
+            the email file
+   - to - String - used to store the primary recipient of the email, retrieved from the 
+            email file
+   - ccLine - String - used to store a line of comma separated cc addresses for the email, 
+            retrieved from the email file
+   - bccLine - String - used to store a line of comma separated bcc addresses for the email,
+            retrieved from the email file
+   - subject - String - used to store the subject of the email, retrieved from the email file
+   - body - String - used to store the body of the email, retrieved from the email file
+   - line - String - used to store each line as it is read in from the email file
+   - props - Properties - used to store the server properties used to send the email
+   - session - Session - used to store the Session instance used to send the email
+   - message - Message - used to store the various components of the email message
+
+Send with Attachment Application (SendProgramWAttachment.java)
+- Program Purpose:
+      Introduces the Java Networking concepts of sending emails associated with the 
+      JavaMail API, as well as including an attachment with the email.
+Compile: javac SendProgramWAttachment.java
+         (Must first include javax.mail.jar in the CLASSPATH)
+Execution: java SendProgramWAttachment thisfile.txt <attachment file>
+Notes:  The program use my personal gmail account for sending.
+Classes: 
+      SendProgramWAttachment - includes all required functionality. Only has the main method.
+Variables:
+      emailFile - File - used to store the file provided at the command line, which 
+            contains the contents of the email to be sent.
+      inFile - BufferedReader - used to store buffered reader attached to the email file
+      host - String - used to store the email server used, retrieved from the email file
+      from - String - used to store the account to send the email from, retrieved from 
+            the email file
+      username - String - used to store the username of the sender account, retrieved from
+            the email file
       password - String - used to store the password of the sender account, retrieved from
             the email file
       to - String - used to store the primary recipient of the email, retrieved from the 
@@ -79,3 +113,7 @@ Send Mail Application
       props - Properties - used to store the server properties used to send the email
       session - Session - used to store the Session instance used to send the email
       message - Message - used to store the various components of the email message
+      messageBodyPart - BodyPart - used to store a body part included in the message
+      multipart - Multipart - used to store a default Multipart used for message
+      filename - String - used to store the attachment file provided at the command line
+      source - DataSource - used to store a FileDatSource created with attachment file
