@@ -130,46 +130,46 @@ GetMail Test Plan
 (A manuel check of my inbox shows only these two unread messages)
 
 - Normal Case 2:
-      - Runs program as constituted, without any alterations.
-      - Should get any unread emails in the specified account/folder.
-      - Command prompt: java GetMail imap.gmail.com bonhamdaniel@gmail.com *********** 2
+   - Runs program as constituted, without any alterations.
+   - Should get any unread emails in the specified account/folder.
+   - Command prompt: java GetMail imap.gmail.com bonhamdaniel@gmail.com *********** 2
         - > 2.  Free Starbucks Coffee Tomorrow (Just Bring a Cup!), Sales at Lululemon, Amazon.ca, Zara, Costco + More   ("RedFlagDeals.com Bargains Insider" <newsletter@e.redflagdeals.com>)
-      - > 
-      - > 
-      - > To view this email as a web page, go
-      - > http://cl.s6.exct.net/?qs=70de6d0c1ec19e8a246bf397dc45d61b5f91e31b48485ee8d857e5
-      - > 3754dcae83
-      - > here .
-      - > 
-      - > http://cl.s6.exct.net/?qs=70de6d0c1ec19e8acc88f181a813f86e0e0b9ffd1469d1c0836cb7
-      - > 254906ec1a
-      - > 
-      - > http://cl.s6.exct.net/?qs=70de6d0c1ec19e8a9c0fa99f4e7aeb68e564651f3c0a37c495cd2c
-      - > 66495278ca
-      - > 
-      - > http://cl.s6.exct.net/?qs=70de6d0c1ec19e8ac56293c56f2a8d539a53838bf2709f644eddd2
-      - > a65bc906d4
-      - > 
-      - > http://cl.s6.exct.net/?qs=70de6d0c1ec19e8a71b5a06c6cd14b82c905a84357e3702eba9a53
-      - > 4ac961aea8
-      - > 
-      - > FEATURED DEAL OF THE WEEKApril 21, 2015
-      - > DEALS OF THE WEEKApril 21, 2015
-      - > 
-      - > 15 MOST POPULAR DEALS OF THE WEEK
-      - > April 21, 2015
-      - > 
-      - > .
-      - > .
-      - > .
+        - > 
+        - > 
+        - > To view this email as a web page, go
+        - > http://cl.s6.exct.net/?qs=70de6d0c1ec19e8a246bf397dc45d61b5f91e31b48485ee8d857e5
+        - > 3754dcae83
+        - > here .
+        - > 
+        - > http://cl.s6.exct.net/?qs=70de6d0c1ec19e8acc88f181a813f86e0e0b9ffd1469d1c0836cb7
+        - > 254906ec1a
+        - > 
+        - > http://cl.s6.exct.net/?qs=70de6d0c1ec19e8a9c0fa99f4e7aeb68e564651f3c0a37c495cd2c
+        - > 66495278ca
+        - > 
+        - > http://cl.s6.exct.net/?qs=70de6d0c1ec19e8ac56293c56f2a8d539a53838bf2709f644eddd2
+        - > a65bc906d4
+        - > 
+        - > http://cl.s6.exct.net/?qs=70de6d0c1ec19e8a71b5a06c6cd14b82c905a84357e3702eba9a53
+        - > 4ac961aea8
+        - > 
+        - > FEATURED DEAL OF THE WEEKApril 21, 2015
+        - > DEALS OF THE WEEKApril 21, 2015
+        - > 
+        - > 15 MOST POPULAR DEALS OF THE WEEK
+        - > April 21, 2015
+        - > 
+        - > .
+        - > .
+        - > .
   
 **Output correct**
 (A manuel check of the message shoes it is displaying correctly)
 
 - Normal Case 3:
-      - Runs program as constituted, without any alterations.
-      - Should get any unread emails in the specified account/folder.
-      - Command prompt: java GetMail imap.gmail.com bonhamdaniel@gmail.com *************
+    - Runs program as constituted, without any alterations.
+    - Should get any unread emails in the specified account/folder.
+    - Command prompt: java GetMail imap.gmail.com bonhamdaniel@gmail.com *************
         - > 1.  Drive to the Hoop with this Basketball Playoff Contest   (DraftKings <email@
         - > e.draftkings.com>)
         - > 2.  COMP306 R2: Textbook Source Code Won't Work   (alexandrabr7 <noreply@athabascau.ca>)
@@ -178,17 +178,17 @@ GetMail Test Plan
       (Showing that the message read in Test Run 2 is no longer unread - a new message added)
 
 - Exception Case 1 (not enough args provided):
-      - Runs program as constituted, without any alterations.
-      - Should display error message and exit.
-      - Command prompt: java SendProgram1 imap.gmail.com bonhamdaniel@gmail.com
+    - Runs program as constituted, without any alterations.
+    - Should display error message and exit.
+    - Command prompt: java SendProgram1 imap.gmail.com bonhamdaniel@gmail.com
         - > Usage: java GetMail [server] [user] [password] or Usage: java GetMail [server] [user] [password] [message #] (message displayed and program exits)
 
 **Output correct**
 
 - Exception Case 2 (problem with provided arguments - incorrect password):
-      - Runs program as constituted, without any alterations.
-      - Should display error message and exit.
-      - Command prompt: java GetMail imap.gmail.com bonhamdaniel@gmail.com fhsgsfdgdfgds
+    - Runs program as constituted, without any alterations.
+    - Should display error message and exit.
+    - Command prompt: java GetMail imap.gmail.com bonhamdaniel@gmail.com fhsgsfdgdfgds
         - > There was an error connecting with the provided information (message displayed and program exits)
 
 **Output correct**
@@ -207,25 +207,25 @@ SendProgram1 Test Program
 - ***all necessary jars and classes must be in CLASSPATH***
 - ***thisfile.txt included in folder - must be in specified format***
 - Normal Case 1:
-      - Runs program as constituted, without any alterations.
-      - Should send email included in file provided to specified recipient.
-      - Command prompt: java SendProgram1 thisfile.txt
-           -> Sent message successfully....
-      - Email received in receipient inbox
-           - > from: ***@gmail.com
-           - > to: ***@gmail.com
-           - > cc: ***@khicommunity.com,
-           - > ***@hotmail.com,
-           - > ***@facebook.com
-           - > bcc:  ***@hotmail.com,
-           - > ***@ymail.com,
-           - > ***@gmail.com
-           - > date: Tue, Apr 21, 2015 at 2:13 PM
-           - > subject:  COMP 348 Email Server Project
-           - > mailed-by:  gmail.com
-           - > Sorry, I'm doing a project and needed to use 7 different e-mail addresses 
-           - > to send a message to from a server that I had to program.  You may get inundated 
-           - > with this message :/
+    - Runs program as constituted, without any alterations.
+    - Should send email included in file provided to specified recipient.
+    - Command prompt: java SendProgram1 thisfile.txt
+        - > Sent message successfully....
+    - Email received in receipient inbox
+        - > from: ***@gmail.com
+        - > to: ***@gmail.com
+        - > cc: ***@khicommunity.com,
+        - > ***@hotmail.com,
+        - > ***@facebook.com
+        - > bcc:  ***@hotmail.com,
+        - > ***@ymail.com,
+        - > ***@gmail.com
+        - > date: Tue, Apr 21, 2015 at 2:13 PM
+        - > subject:  Email Server Project
+        - > mailed-by:  gmail.com
+        - > Sorry, I'm doing a project and needed to use 7 different e-mail addresses 
+        - > to send a message to from a server that I had to program.  You may get inundated 
+        - > with this message :/
 
 **Output correct**
 
@@ -233,10 +233,10 @@ SendProgram1 Test Program
    file provided at the command line is successfully sent to the recipients inbox.
 
 - Exception Case 1 (no file provided at command line):
-      - Runs program as constituted, without any alterations.
-      - Should send email included in file provided to specified recipient.
-      - Command prompt: java SendProgram1 thisfile.txt
-          - > Usage: java SendProgram1 [email file] (message displayed and program exits)
+    - Runs program as constituted, without any alterations.
+    - Should send email included in file provided to specified recipient.
+    - Command prompt: java SendProgram1 thisfile.txt
+        - > Usage: java SendProgram1 [email file] (message displayed and program exits)
 
 **Output correct**
 
@@ -250,111 +250,106 @@ Discussion: The first test case demonstrates that the program successfully retri
 ***File provided at command line must be a valid email file in proper format***
 
 SendProgramWAttachment Test Plan
-- TEST PLAN
-Normal Case 1:
-      ***all necessary jars and classes must be in CLASSPATH***
-      ***thisfile.txt included in folder - must be in specified format***
-      ***kess.jpg file included in folder***
-      Runs program as constituted, without any alterations.
-      Should send email included in file provided, and attachment to specified recipients.
-      Command prompt: java SendProgramWAttachment thisfile.txt kess.jpg
-      > Sent message successfully....
-      Email received in receipient inbox
-      > from: bonhamdaniel@gmail.com
-      > to: bonhamdaniel@gmail.com
-      > cc: dan@khicommunity.com,
-      > dan_bonham@hotmail.com,
-      > dan.bonham.5@facebook.com
-      > bcc:  kathryn_bonham@hotmail.com,
-      > gord.bonham@ymail.com,
-      > catherine.a.murkin@gmail.com
-      > date: Tue, Apr 21, 2015 at 2:32 PM
-      > subject:  COMP 348 Email Server Project
-      > mailed-by:  gmail.com
-      > Sorry, I'm doing a school project and needed to used 7 different e-mail addresses 
-      > to send a message to from a server that I had to program.  You may get inundated 
-      > with this message :/
-      > ***kess.jpg ttachment image was displayed in the email below message body***
-      **Output correct**
+- ***all necessary jars and classes must be in CLASSPATH***
+- ***thisfile.txt included in folder - must be in specified format***
+- ***kess.jpg file included in folder***
+- Normal Case 1:
+    - Runs program as constituted, without any alterations.
+    - Should send email included in file provided, and attachment to specified recipients.
+    - Command prompt: java SendProgramWAttachment thisfile.txt kess.jpg
+        - > Sent message successfully....
+    - Email received in receipient inbox
+        - > from: ***@gmail.com
+        - > to: ***@gmail.com
+        - > cc: ***@khicommunity.com,
+        - > ***@hotmail.com,
+        - > ***@facebook.com
+        - > bcc:  ***@hotmail.com,
+        - > ***@ymail.com,
+        - > ***@gmail.com
+        - > date: Tue, Apr 21, 2015 at 2:32 PM
+        - > subject:  Email Server Project
+        - > mailed-by:  gmail.com
+        - > Sorry, I'm doing a project and needed to used 7 different e-mail addresses 
+        - > to send a message to from a server that I had to program.  You may get inundated 
+        - > with this message :/
 
-Normal Case 2:
-      ***all necessary jars and classes must be in CLASSPATH***
-      ***thisfile.txt included in folder - must be in specified format***
-      ***iso.png file included in folder***
-      Runs program as constituted, without any alterations.
-      Should send email included in file provided, and attachment to specified recipients.
-      Command prompt: java SendProgramWAttachment thisfile.txt iso.png
-      > Sent message successfully....
-      Email received in receipient inbox
-      > from: bonhamdaniel@gmail.com
-      > to: bonhamdaniel@gmail.com
-      > cc: dan@khicommunity.com,
-      > dan_bonham@hotmail.com,
-      > dan.bonham.5@facebook.com
-      > bcc:  kathryn_bonham@hotmail.com,
-      > gord.bonham@ymail.com,
-      > catherine.a.murkin@gmail.com
-      > date: Tue, Apr 21, 2015 at 2:36 PM
-      > subject:  COMP 348 Email Server Project
-      > mailed-by:  gmail.com
-      > Sorry, I'm doing a school project and needed to used 7 different e-mail addresses 
-      > to send a message to from a server that I had to program.  You may get inundated 
-      > with this message :/
-      > ***iso.png attachment image was displayed in the email below message body***
-      **Output correct**
+***kess.jpg ttachment image was displayed in the email below message body***
+**Output correct**
 
-Normal Case 3:
-      ***all necessary jars and classes must be in CLASSPATH***
-      ***thisfile.txt included in folder - must be in specified format***
-      ***example.zip file included in folder***
-      Runs program as constituted, without any alterations.
-      Should send email included in file provided, and attachment to specified recipients.
-      Command prompt: java SendProgramWAttachment thisfile.txt example.zip
-      > Sent message successfully....
-      Email received in receipient inbox
-      > from: bonhamdaniel@gmail.com
-      > to: bonhamdaniel@gmail.com
-      > cc: dan@khicommunity.com,
-      > dan_bonham@hotmail.com,
-      > dan.bonham.5@facebook.com
-      > bcc:  kathryn_bonham@hotmail.com,
-      > gord.bonham@ymail.com,
-      > catherine.a.murkin@gmail.com
-      > date: Tue, Apr 21, 2015 at 2:38 PM
-      > subject:  COMP 348 Email Server Project
-      > mailed-by:  gmail.com
-      > Sorry, I'm doing a school project and needed to used 7 different e-mail addresses 
-      > to send a message to from a server that I had to program.  You may get inundated 
-      > with this message :/
-      > ***example.zip attachment was included in the email below message body***
-      **Output correct**
+- Normal Case 2:
+    - ***iso.png file included in folder***
+    - Runs program as constituted, without any alterations.
+    - Should send email included in file provided, and attachment to specified recipients.
+    - Command prompt: java SendProgramWAttachment thisfile.txt iso.png
+        - > Sent message successfully....
+    - Email received in receipient inbox
+        - > from: ***@gmail.com
+        - > to: ***@gmail.com
+        - > cc: ***@khicommunity.com,
+        - > ***@hotmail.com,
+        - > ***@facebook.com
+        - > bcc:  ***@hotmail.com,
+        - > ***@ymail.com,
+        - > ***@gmail.com
+        - > date: Tue, Apr 21, 2015 at 2:36 PM
+        - > subject:  Email Server Project
+        - > mailed-by:  gmail.com
+        - > Sorry, I'm doing a school project and needed to used 7 different e-mail addresses 
+        - > to send a message to from a server that I had to program.  You may get inundated 
+        - > with this message :/
+
+***iso.png attachment image was displayed in the email below message body***
+**Output correct**
+
+- Normal Case 3:
+    - ***example.zip file included in folder***
+    - Runs program as constituted, without any alterations.
+    - Should send email included in file provided, and attachment to specified recipients.
+    - Command prompt: java SendProgramWAttachment thisfile.txt example.zip
+        - > Sent message successfully....
+    - Email received in receipient inbox
+      > from: ***@gmail.com
+        - > to: ***@gmail.com
+        - > cc: ***@khicommunity.com,
+        - > ***@hotmail.com,
+        - > ***@facebook.com
+        - > bcc:  ***@hotmail.com,
+        - > ***@ymail.com,
+        - > ***@gmail.com
+        - > date: Tue, Apr 21, 2015 at 2:38 PM
+        - > subject:  Email Server Project
+        - > mailed-by:  gmail.com
+        - > Sorry, I'm doing a project and needed to used 7 different e-mail addresses 
+        - > to send a message to from a server that I had to program.  You may get inundated 
+        - > with this message :/
+
+***example.zip attachment was included in the email below message body***
+**Output correct**
 ***No other normal testing necessary, as this demonstrates that the email specified in the
    file and attachment provided at the command line is successfully sent to the recipients inbox.
 
-Exception Case 1 (no attachment provided at command line):
-      ***all necessary jars and classes must be in CLASSPATH***
-      ***thisfile.txt included in folder - must be in specified format***
-      Runs program as constituted, without any alterations.
-      Should send email included in file provided to specified recipient.
-      Command prompt: java SendProgramWAttachment thisfile.txt
-      > Usage: java SendProgramWAttachment <email file> <attachment>
-      (message displayed and program exits)
-      **Output correct**
+- Exception Case 1 (no attachment provided at command line):
+    - Runs program as constituted, without any alterations.
+    - Should send email included in file provided to specified recipient.
+    - Command prompt: java SendProgramWAttachment thisfile.txt
+        - > Usage: java SendProgramWAttachment [email file] [attachment] (message displayed and program exits)
 
-Exception Case 2 (no email file provided at command line):
-      ***all necessary jars and classes must be in CLASSPATH***
-      ***example.zip included in folder***
-      Runs program as constituted, without any alterations.
-      Should send email included in file provided to specified recipient.
-      Command prompt: java SendProgramWAttachment example.zip
-      > Usage: java SendProgramWAttachment <email file> <attachment>
-      (message displayed and program exits)
-      **Output correct**
+**Output correct**
 
-      The first three test cases demonstrate that the program successfully retrieves the email
-      information from the file spcified at the command line and transports the email
+- Exception Case 2 (no email file provided at command line):
+    - Runs program as constituted, without any alterations.
+    - Should send email included in file provided to specified recipient.
+    - Command prompt: java SendProgramWAttachment example.zip
+        - > Usage: java SendProgramWAttachment [email file] [attachment] (message displayed and program exits)
+
+**Output correct**
+
+Discussion: The first three test cases demonstrate that the program successfully retrieves the email
+      information from the file specified at the command line and transports the email
       message and attachment (jpg, png, zip) to all intended recipients.  All recipients included 
       verified that they did indeed receive the messages sent via the program.
       The exception test cases demonstrate how the program handles the case where a file
       is not included on the command line.  It simply displays a usage message and exits.
-      ***File provided at command line must be a valid email file in proper format***
+
+***File provided at command line must be a valid email file in proper format***
