@@ -41,6 +41,18 @@ Client Application
 				   name.
 	- prime - BigInteger - used to store result of invoking remote method
 
+LargestPrimeNumber.java
+- Program Purpose:
+		Introduces the Java Networking concepts RMI.
+- Compile: javac compute\LargestPrimeNumber.java
+- Execution: n/a
+- Notes:  jar file created to be shared with other RMI program components.
+		(jar cvf compute.jar compute\*.classes)
+- Classes: 
+	- LargestPrimeNumber - interface for the remote object.
+- Variables:
+	- range - BigInteger - used to store the range in which to find the largest prime
+
 Server Test Plan
 - ***Server must be running before client starts***
 - ***all necessary jars and classes must be in network accessible folder***
