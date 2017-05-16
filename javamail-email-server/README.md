@@ -203,13 +203,61 @@ Discussion: The first test case demonstrates that the program successfully retri
       enough or incorrect information in provided.  It simply displays a usage message 
       and exits.
 
-SendProgram1.java
+SendProgram1 Test Program
+- ***all necessary jars and classes must be in CLASSPATH***
+- ***thisfile.txt included in folder - must be in specified format***
 - Normal Case 1:
+      - Runs program as constituted, without any alterations.
+      - Should send email included in file provided to specified recipient.
+      - Command prompt: java SendProgram1 thisfile.txt
+           -> Sent message successfully....
+      - Email received in receipient inbox
+           - > from: ***@gmail.com
+           - > to: ***@gmail.com
+           - > cc: ***@khicommunity.com,
+           - > ***@hotmail.com,
+           - > ***@facebook.com
+           - > bcc:  ***@hotmail.com,
+           - > ***@ymail.com,
+           - > ***@gmail.com
+           - > date: Tue, Apr 21, 2015 at 2:13 PM
+           - > subject:  COMP 348 Email Server Project
+           - > mailed-by:  gmail.com
+           - > Sorry, I'm doing a project and needed to use 7 different e-mail addresses 
+           - > to send a message to from a server that I had to program.  You may get inundated 
+           - > with this message :/
+
+**Output correct**
+
+***No other normal testing necessary, as this demonstrates that the email specified in the
+   file provided at the command line is successfully sent to the recipients inbox.
+
+- Exception Case 1 (no file provided at command line):
+      - Runs program as constituted, without any alterations.
+      - Should send email included in file provided to specified recipient.
+      - Command prompt: java SendProgram1 thisfile.txt
+          - > Usage: java SendProgram1 [email file] (message displayed and program exits)
+
+**Output correct**
+
+Discussion: The first test case demonstrates that the program successfully retrieves the email
+      information from the file spcified at the command line and transports the email
+      message to all intended recipients.  All recipients included verified that they did
+      indeed receive the messages send via the program.
+      The exception test case demonstrates how the program handles the case where a file
+      is not included on the command line.  It simply displays a usage message and exits.
+ 
+***File provided at command line must be a valid email file in proper format***
+
+SendProgramWAttachment Test Plan
+- TEST PLAN
+Normal Case 1:
       ***all necessary jars and classes must be in CLASSPATH***
       ***thisfile.txt included in folder - must be in specified format***
+      ***kess.jpg file included in folder***
       Runs program as constituted, without any alterations.
-      Should send email included in file provided to specified recipient.
-      Command prompt: java SendProgram1 thisfile.txt
+      Should send email included in file provided, and attachment to specified recipients.
+      Command prompt: java SendProgramWAttachment thisfile.txt kess.jpg
       > Sent message successfully....
       Email received in receipient inbox
       > from: bonhamdaniel@gmail.com
@@ -220,31 +268,93 @@ SendProgram1.java
       > bcc:  kathryn_bonham@hotmail.com,
       > gord.bonham@ymail.com,
       > catherine.a.murkin@gmail.com
-      > date: Tue, Apr 21, 2015 at 2:13 PM
+      > date: Tue, Apr 21, 2015 at 2:32 PM
       > subject:  COMP 348 Email Server Project
       > mailed-by:  gmail.com
       > Sorry, I'm doing a school project and needed to used 7 different e-mail addresses 
       > to send a message to from a server that I had to program.  You may get inundated 
       > with this message :/
+      > ***kess.jpg ttachment image was displayed in the email below message body***
       **Output correct**
 
-***No other normal testing necessary, as this demonstrates that the email specified in the
-   file provided at the command line is successfully sent to the recipients inbox.
+Normal Case 2:
+      ***all necessary jars and classes must be in CLASSPATH***
+      ***thisfile.txt included in folder - must be in specified format***
+      ***iso.png file included in folder***
+      Runs program as constituted, without any alterations.
+      Should send email included in file provided, and attachment to specified recipients.
+      Command prompt: java SendProgramWAttachment thisfile.txt iso.png
+      > Sent message successfully....
+      Email received in receipient inbox
+      > from: bonhamdaniel@gmail.com
+      > to: bonhamdaniel@gmail.com
+      > cc: dan@khicommunity.com,
+      > dan_bonham@hotmail.com,
+      > dan.bonham.5@facebook.com
+      > bcc:  kathryn_bonham@hotmail.com,
+      > gord.bonham@ymail.com,
+      > catherine.a.murkin@gmail.com
+      > date: Tue, Apr 21, 2015 at 2:36 PM
+      > subject:  COMP 348 Email Server Project
+      > mailed-by:  gmail.com
+      > Sorry, I'm doing a school project and needed to used 7 different e-mail addresses 
+      > to send a message to from a server that I had to program.  You may get inundated 
+      > with this message :/
+      > ***iso.png attachment image was displayed in the email below message body***
+      **Output correct**
 
-Exception Case 1 (no file provided at command line):
+Normal Case 3:
+      ***all necessary jars and classes must be in CLASSPATH***
+      ***thisfile.txt included in folder - must be in specified format***
+      ***example.zip file included in folder***
+      Runs program as constituted, without any alterations.
+      Should send email included in file provided, and attachment to specified recipients.
+      Command prompt: java SendProgramWAttachment thisfile.txt example.zip
+      > Sent message successfully....
+      Email received in receipient inbox
+      > from: bonhamdaniel@gmail.com
+      > to: bonhamdaniel@gmail.com
+      > cc: dan@khicommunity.com,
+      > dan_bonham@hotmail.com,
+      > dan.bonham.5@facebook.com
+      > bcc:  kathryn_bonham@hotmail.com,
+      > gord.bonham@ymail.com,
+      > catherine.a.murkin@gmail.com
+      > date: Tue, Apr 21, 2015 at 2:38 PM
+      > subject:  COMP 348 Email Server Project
+      > mailed-by:  gmail.com
+      > Sorry, I'm doing a school project and needed to used 7 different e-mail addresses 
+      > to send a message to from a server that I had to program.  You may get inundated 
+      > with this message :/
+      > ***example.zip attachment was included in the email below message body***
+      **Output correct**
+***No other normal testing necessary, as this demonstrates that the email specified in the
+   file and attachment provided at the command line is successfully sent to the recipients inbox.
+
+Exception Case 1 (no attachment provided at command line):
       ***all necessary jars and classes must be in CLASSPATH***
       ***thisfile.txt included in folder - must be in specified format***
       Runs program as constituted, without any alterations.
       Should send email included in file provided to specified recipient.
-      Command prompt: java SendProgram1 thisfile.txt
-      > Usage: java SendProgram1 <email file>
+      Command prompt: java SendProgramWAttachment thisfile.txt
+      > Usage: java SendProgramWAttachment <email file> <attachment>
       (message displayed and program exits)
       **Output correct**
 
-      The first test case demonstrates that the program successfully retrieves the email
+Exception Case 2 (no email file provided at command line):
+      ***all necessary jars and classes must be in CLASSPATH***
+      ***example.zip included in folder***
+      Runs program as constituted, without any alterations.
+      Should send email included in file provided to specified recipient.
+      Command prompt: java SendProgramWAttachment example.zip
+      > Usage: java SendProgramWAttachment <email file> <attachment>
+      (message displayed and program exits)
+      **Output correct**
+
+      The first three test cases demonstrate that the program successfully retrieves the email
       information from the file spcified at the command line and transports the email
-      message to all intended recipients.  All recipients included verified that they did
-      indeed receive the messages send via the program.
-      The exception test case demonstrates how the program handles the case where a file
+      message and attachment (jpg, png, zip) to all intended recipients.  All recipients included 
+      verified that they did indeed receive the messages sent via the program.
+      The exception test cases demonstrate how the program handles the case where a file
       is not included on the command line.  It simply displays a usage message and exits.
       ***File provided at command line must be a valid email file in proper format***
