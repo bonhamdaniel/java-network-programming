@@ -26,20 +26,21 @@ Format of Sending Messages:
 - Execution: java GetMail [server] [user] [password] or java GetMail [server] [user] [password] [email#]
 - Notes:  The program must access a valid email account.
 - Classes: 
-  - GetMail - includes all required functionality. Only has the main method and the 
+      - GetMail - includes all required functionality. Only has the main method and the 
           method receiveMail.
-Variables:
-      properties - Properties - used to store the email server properties
-      emailSession - Session - used to store the Session used for the email Session
-      emailStore - Store - used to store the imaps Store used for receiving emails
-      emailFolder - Folder - used to store the Folder to access for receiving emails
-      unread - int - used to store the number of unread messages found
-      messages - Message[] - used to store all the unread messages found
-      message - Message - used to store the current message
-      mp - Multipart - used to store Multipart messages
-      bp - BodyPart - used to store the body of the message
-      host - String - used to store the server host used for receiving emails
-      mailStoreType - Store - used to store the type of Store used to receive emails
-      username - String - used to store the username of the account to access
-      password - String - used to store the password of the account to access
-      option - int - used to store the email # theuse would like to access.
+- Variables:
+      - properties - Properties - used to store the email server properties
+      - emailSession - Session - used to store the Session used for the email Session
+      - emailStore - Store - used to store the imaps Store used for receiving emails
+      - emailFolder - Folder - used to store the Folder to access for receiving emails
+      - unread - int - used to store the number of unread messages found
+      - messages - Message[] - used to store all the unread messages found
+      - message - Message - used to store the current message
+      - mp - Multipart - used to store Multipart messages
+      - bp - BodyPart - used to store the body of the message
+      - host - String - used to store the server host used for receiving emails
+      - mailStoreType - Store - used to store the type of Store used to receive emails
+      - username - String - used to store the username of the account to access
+      - password - String - used to store the password of the account to access
+      - option - int - used to store the email # theuse would like to access.
+
