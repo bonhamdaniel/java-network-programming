@@ -120,9 +120,9 @@ Send with Attachment Application (SendProgramWAttachment.java)
 GetMail Test Plan
 - ***all necessary jars and classes must be in CLASSPATH***
 - Normal Case 1:
-      - Runs program as constituted, without any alterations.
-      - Should get any unread emails in the specified account/folder.
-      - Command prompt: java GetMail imap.gmail.com bonhamdaniel@gmail.com *************
+   - Runs program as constituted, without any alterations.
+   - Should get any unread emails in the specified account/folder.
+   - Command prompt: java GetMail imap.gmail.com bonhamdaniel@gmail.com *************
         - > 1.  Drive to the Hoop with this Basketball Playoff Contest   (DraftKings <email@e.draftkings.com>)
         - > 2.  Free Starbucks Coffee Tomorrow (Just Bring a Cup!), Sales at Lululemon, Amazon.ca, Zara, Costco + More   ("RedFlagDeals.com Bargains Insider" <newsletter@e.redflagdeals.com>)
 
