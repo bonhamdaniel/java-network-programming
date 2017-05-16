@@ -3,7 +3,7 @@ HTTPServerWLog.java - beginning with the FileHTTPServer, adds full logging capab
 - Program Purpose:
 		Introduces the Java Networking concept of Logging.
 - Compile: javac HTTPServerWLog.java
-- Execution: java HTTPServerWLog <root directory> <port> 
+- Execution: java HTTPServerWLog [root directory] [port] 
 - Notes:  A telnet client is used to test the server.  GET commands are sent from telnet for
 		specified files to be searched for on the server.  This is further documented in
 		the test plan.  Each request is logged to a file called "requests" created in the
