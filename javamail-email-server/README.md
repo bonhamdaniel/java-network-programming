@@ -22,14 +22,11 @@ Format of Sending Messages:
  - Program Purpose:
       Introduces the Java Networking concepts of receiving emails associated with the 
       JavaMail API.
-Compile: javac GetMail.java
-         (Must first include javax.mail.jar in the CLASSPATH)
-Execution: java GetMail <server> <user> <password>
-           or
-           java GetMail <server> <user> <password> <email#>
-Notes:  The program use my personal gmail account for fetching emails.
-Classes: 
-      GetMail - includes all required functionality. Only has the main method and the 
+- Compile: javac GetMail.java (Must first include javax.mail.jar in the CLASSPATH)
+- Execution: java GetMail [server] [user] [password] or java GetMail [server] [user] [password] [email#]
+- Notes:  The program must access a valid email account.
+- Classes: 
+  - GetMail - includes all required functionality. Only has the main method and the 
           method receiveMail.
 Variables:
       properties - Properties - used to store the email server properties
